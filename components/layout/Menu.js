@@ -114,7 +114,7 @@ export default function Menu() {
                                                 <li><Link href="/checkout">Checkout</Link></li>
                                             </ul>
                                         </li> */}
-                                        {/* <li className="menu-item-has-children"><Link href="/blog">Blog</Link> */}
+                                        <li className="menu-item-has-children"><Link href="/blog-details">Projects</Link>
                                             {/* <ul className="sub-menu">
                                                 <li><Link href="/blog">Blog</Link></li>
                                                 <li><Link href="/blog-sidebar">Blog Sidebar</Link>
@@ -122,7 +122,7 @@ export default function Menu() {
                                                 <li><Link href="/blog-details">Blog Details</Link>
                                                 </li>
                                             </ul> */}
-                                        {/* </li> */}
+                                        </li>
                                         <li><Link href="/contact">Contact</Link></li>
                                     </ul>
         </>
