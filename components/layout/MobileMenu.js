@@ -26,7 +26,7 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
                 <nav className="menu-box">
                     <div className="close-btn" onClick={handleMobileMenu}><i className="fas fa-times"></i></div>
                     <div className="nav-logo">
-                        <Link href="/"><img src="assets/img/resource/logo-2.png" alt="Logo"/></Link>
+                        <Link href="/"><img src="assets/img/resource/namko-logo.png" alt="Logo"/></Link>
                     </div>
                     <div className="menu-outer">
                         <ul className="navigation clearfix">
@@ -81,7 +81,7 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
                                 </ul>
                                 <div className={isActive.key == 4 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(4)}><span className="fa fa-angle-right" /></div>
                             </li> */}
-                            <li className="menu-item-has-children"><Link href="/blog" onClick={handleMobileMenu}>Blog</Link>
+                            {/* <li className="menu-item-has-children"><Link href="/blog" onClick={handleMobileMenu}>Blog</Link> */}
                                 {/* <ul style={{ display: `${isActive.key == 5 ? "block" : "none"}` }}>
                                     <li><Link href="/blog" onClick={handleMobileMenu}>Blog</Link></li>
                                     <li><Link href="/blog-sidebar" onClick={handleMobileMenu}>Blog Sidebar</Link>
@@ -90,7 +90,7 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
                                     </li>
                                 </ul> */}
                                 {/* <div className={isActive.key == 5 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(5)}><span className="fa fa-angle-right" /></div> */}
-                            </li>
+                            {/* </li> */}
                             <li><Link href="/contact" onClick={handleMobileMenu}>Contact</Link></li>
                         </ul>
                         {/*Here Menu Will Come Automatically Via Javascript / Same Menu as in Header */}
@@ -98,7 +98,9 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
                     <div className="contact-info">
                         <div className="icon-box"><span className="icon-call"></span>
                         </div>
-                        <p><Link href="tel:123456789">(629) 555-0129</Link></p>
+                        <p><Link href="tel:+91 81979 82888
+">+91 81979 82888
+</Link></p>
                     </div>
                     <div className="social-links">
                         <ul className="clearfix list-wrap">

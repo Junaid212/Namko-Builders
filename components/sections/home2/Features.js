@@ -56,7 +56,7 @@ export default function Features() {
                             <div className="feauture-one__single">
                                 <div className="feauture-one__single-text">
                                     <p>TRUTED QUALITY</p>
-                                    <h2><a href="#">Homes made to last.</a></h2>
+                                    <h2><a href="#">Homes made to last.</a></h2><br/>
                                 </div>
 
                                 <div className="feauture-one__single-bottom">

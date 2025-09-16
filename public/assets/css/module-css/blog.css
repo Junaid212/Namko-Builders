@@ -333,8 +333,8 @@
     justify-content: space-between;
     background: var(--thm-white);
     color: var(--thm-black);
-    font-size: 18px;
-    line-height: 40px;
+    font-size: 16px;
+    line-height: 30px;
     font-weight: 500;
     text-transform: capitalize;
     padding: 4px 20px 6px;

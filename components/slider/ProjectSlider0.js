@@ -57,7 +57,7 @@ export default function ProjectSlider0() {
         <>
             <Swiper {...swiperOptions} className="theme_carousel owl-theme">
                         <SwiperSlide className="swiper-slide">
-                            <img src="assets/img/project/project-v2-img1.jpg" alt="#" />
+                            <img src="assets/img/project/1.png" alt="#" />
                             <div className="overlay-content">
                                 <p>Nellikai Road, State Bank , Mangalore</p>
                                 <h2><a href="#">The Ocean View</a></h2>
@@ -65,7 +65,7 @@ export default function ProjectSlider0() {
                         </SwiperSlide>
                         <SwiperSlide className="swiper-slide">
                             <div>
-                                <img src="assets/img/project/project-v2-img2.jpg" alt="#" />
+                                <img src="assets/img/project/2.png" alt="#" />
                                 <div className="overlay-content">
                                     <p>Nellikai Road, State Bank , Mangalore</p>
                                 <h2><a href="#">The Ocean View</a></h2>
@@ -73,34 +73,34 @@ export default function ProjectSlider0() {
                             </div>
                         </SwiperSlide>
                         <SwiperSlide className="swiper-slide">
-                            <img src="assets/img/project/project-v2-img3.jpg" alt="#" />
+                            <img src="assets/img/project/3.png" alt="#" />
+                            <div className="overlay-content">
+                                <p>Nellikai Road, State Bank , Mangalore</p>
+                                <h2><a href="#">The Ocean View</a></h2>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide className="swiper-slide">
+                            <img src="assets/img/project/4.png" alt="#" />
+                            <div className="overlay-content">
+                                <p>Nellikai Road, State Bank , Mangalore</p>
+                                <h2><a href="#">The Ocean View</a></h2>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide className="swiper-slide">
+                            <img src="assets/img/project/5.png" alt="#" />
+                            <div className="overlay-content">
+                                <p>Nellikai Road, State Bank , Mangalore</p>
+                                <h2><a href="#">The Ocean View</a></h2>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide className="swiper-slide">
+                            <img src="assets/img/project/6.png" alt="#" />
                             <div className="overlay-content">
                                 <p>Nellikai Road, State Bank , Mangalore</p>
                                 <h2><a href="#">The Ocean View</a></h2>
                             </div>
                         </SwiperSlide>
                         {/* <SwiperSlide className="swiper-slide">
-                            <img src="assets/img/project/project-v2-img1.jpg" alt="#" />
-                            <div className="overlay-content">
-                                <p>San Fransisco</p>
-                                <h2><a href="#">Hotel Joshna Villa</a></h2>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img src="assets/img/project/project-v2-img2.jpg" alt="#" />
-                            <div className="overlay-content">
-                                <p>San Fransisco</p>
-                                <h2><a href="#">Hotel Joshna Villa</a></h2>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img src="assets/img/project/project-v2-img3.jpg" alt="#" />
-                            <div className="overlay-content">
-                                <p>San Fransisco</p>
-                                <h2><a href="#">Hotel Joshna Villa</a></h2>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
                             <img src="assets/img/project/project-v2-img3.jpg" alt="#" />
                             <div className="overlay-content">
                                 <p>San Fransisco</p>

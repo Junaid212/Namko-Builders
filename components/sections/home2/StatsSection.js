@@ -148,11 +148,11 @@ function StatsSection() {
         }
 
         .stat-card.dark {
-          background-color: #374151;
+          background-color: #11161F;
         }
 
         .stat-card.red {
-          background-color: #ef4444;
+          background-color: #EEAC2F;
         }
 
         .stat-number {

@@ -5,7 +5,7 @@ export default function Home() {
 
     return (
         <>
-            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Blog Details">
+            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Project Details">
 
             {/*Start Blog Details */}
             <section className="blog-details">
@@ -15,27 +15,21 @@ export default function Home() {
                         <div className="col-xl-8">
                             <div className="blog-details__content">
                                 <div className="blog-details__content-img1">
-                                    <img src="assets/img/blog/blog-details-img1.jpg" alt=""/>
+                                    <img src="assets/img/blog/blog1.png" alt=""/>
                                 </div>
 
                                 <div className="blog-details__content-text1">
-                                    <h2>Easy & Most Powerful Server Platform.</h2>
-                                    <p className="text1">March 23, 2022 _ DEVELOPMENT _ BY Katty Olson _ 2 Comments</p>
-                                    <p className="text2">With worldwide annual spend on digital advertising surpassing $325
-                                        billion, it’s no
-                                        surprise that different approaches to online marketing are becoming available. One
-                                        of these new approaches is performance marketing or digital performance marketing.
-                                        Keep reading to learn all about performance marketing, from how it works to how it
-                                        compares to digital marketing. Plus, get insight into the benefits and risks of
-                                        performance marketing and how it can affect your company’s long-term success and
-                                        profitability. Performance marketing is an approach to digital marketing or
-                                        advertising where businesses only pay when a specific result occurs. This result
-                                        could be a new lead, sale, or other outcome agreed upon by the advertiser and
-                                        business. Performance marketing involves channels such as affiliate marketing,
-                                        online advertising.</p>
+                                    <h2>OCEAN VIEW</h2>
+                                    <p className="text1">Commercial & Residential</p>
+                                    <p className="text2">The urge to capture the nature in all its magnificence drives every venture to fine a master Architect who would design a dream apartment! To catch a ocean view is something every person innately desires. Those beautiful waves rolling in sunshine at a distance inspires and invites us to be daring in our lifestyles. Each apartment at ocean view should inspire everyone with its exquisite design, enchanting interior spaces and extraordinary amenities.
+<br/><br/>OCEAN VIEW is special in its orientation and design. Nellikai Road next to a plethora of Business Addresses captures your imagination to a destination where sun sets in the horizon with all its splendor. Be it Taj Manjuran or Milagres church the silhouettes of Mangalore dramatizes itself in various dimensions into this great pavilion. OCEAN VIEW will dramatically alter the woy the fine shopping used to bel With its sprawling high degree of precision oriented and maximum ambience shopping will usher in all the major brands hitherto exclusively held sway in the peripheries of big cities
+</p>
+                                </div><br/>
+                                <div className="blog-details__content-img1">
+                                    <img src="assets/img/blog/b2.png" alt=""/>
                                 </div>
 
-                                <div className="blog-details__content-img2">
+                                {/* <div className="blog-details__content-img2">
                                     <div className="row">
                                         <div className="col-xl-6 col-lg-6 col-md-6">
                                             <div className="blog-details__content-img2-single">
@@ -49,17 +43,15 @@ export default function Home() {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
 
                                 <div className="blog-details__content-text2">
-                                    <h2>Latest Articles Updated Daily</h2>
-                                    <p>With worldwide annual spend on digital advertising surpassing $325 billion, it’s no
-                                        surprise that different approaches to online marketing are becoming available. One
-                                        of these new approaches is performance marketing or digital performance marketing.
-                                        Keep reading to learn all about performance marketing</p>
+                                    {/* <h2>Latest Articles Updated Daily</h2> */}
+                                    <p>Mangalore due to its special significance as a burgeoning tourist destination is poised to play a major role in attracting foreign direct investment and inflow of major players with new govemment at the Apex. Promoters of this project Mr. G. Mohammed & Mr. G. Akbar Hussain started their enterprise of importing food & beverages and run supermarkets at Doha Qatar. Middle Eastern progress inspired them with an imagination towards high end real estate. OCEAN VIEW with a combination of high end apartments and world class business spaces offer a dimension hitherto not designed elsewhere. Excellence everywhere has a common parlance and OCEAN VIEW stands imposingly inspiring for everyone!</p>
+
                                 </div>
 
-                                <div className="blog-details__content-text3 text-center">
+                                {/* <div className="blog-details__content-text3 text-center">
                                     <div className="icon-box">
                                         <span className="icon-right-quotation-mark"></span>
                                     </div>
@@ -69,9 +61,9 @@ export default function Home() {
                                             eros. Cursus libero viverra tempus netus diam vestibulum</h4>
                                         <p>David Backhum</p>
                                     </div>
-                                </div>
+                                </div> */}
 
-                                <div className="blog-details__content-text4">
+                                {/* <div className="blog-details__content-text4">
                                     <div className="tag-box">
                                         <div className="title">
                                             <h2>Posted in:</h2>
@@ -89,9 +81,9 @@ export default function Home() {
                                     <div className="icon-box">
                                         <Link href="#"><span className="icon-share"></span></Link>
                                     </div>
-                                </div>
+                                </div> */}
 
-                                <div className="comment-one">
+                                {/* <div className="comment-one">
                                     <h3 className="comment-one__title">Comments (2)</h3>
                                     <div className="comment-one__single">
                                         <div className="comment-one__image">
@@ -116,9 +108,9 @@ export default function Home() {
                                             <span>February 03. 2023 <Link href="#" className="comment-one__btn">Reply</Link></span>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
 
-                                <div className="blog-details__content-form">
+                                {/* <div className="blog-details__content-form">
                                     <div className="title-box">
                                         <h2>Let’s Get in Touch</h2>
                                         <p>Your email address will not be published. Required fields are marked *</p>
@@ -161,7 +153,7 @@ export default function Home() {
                                             </div>
                                         </div>
                                     </form>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         {/*End Blog Sidebar Content */}
@@ -171,32 +163,46 @@ export default function Home() {
                             <div className="sidebar">
                                 {/*Start Sidebar Single */}
                                 <div className="sidebar__single sidebar__search">
-                                    <h3 className="sidebar__title">Search</h3>
-                                    <form action="#" className="sidebar__search-form">
-                                        <input type="search" placeholder="Keywords here...."/>
-                                        <button type="submit"><i className="fa fa-search"></i></button>
-                                    </form>
+                                    <h3 className="sidebar__title">Highlights</h3>
+
+                                    <ul className="sidebar__category-list">
+                                        <li><Link href="#">Multipurpose hall in fourth floor. </Link></li>
+                                        <li><Link href="#">2 automatic elevator of reputed brand </Link></li>
+                                        <li><Link href="#">Generator for common and apartment lighting.</Link></li>
+                                        <li><Link href="#">Telephone with centrex facility (intercom) connection.</Link></li>
+                                        <li><Link href="#">Cable T.V. provision. </Link></li>
+                                        <li><Link href="#">Children's play area with play equipments.</Link></li>
+                                        <li><Link href="#">Attractive visitors lounge.</Link></li>
+                                        <li><Link href="#">King size swimming pool with toddler pool at terrace.</Link></li>
+                                        <li><Link href="#">Club house & Gym</Link></li>
+                                        <li><Link href="#">CCTV in visitors lounge.</Link></li>
+                                        <li><Link href="#">Reticulated gas connection.</Link></li>
+                                    </ul>
                                 </div>
                                 {/*End Sidebar Single */}
 
+                                <div className="blog-details__content-img1">
+                                    <img src="assets/img/project/4.png" alt=""/>
+                                </div>
+
                                 {/*Start Sidebar Single */}
                                 <div className="sidebar__single sidebar__category">
-                                    <h3 className="sidebar__title">Categories</h3>
+                                    <h3 className="sidebar__title">Specifications</h3>
 
                                     <ul className="sidebar__category-list">
-                                        <li><Link className="active" href="#">Architecture <span
+                                        <li><Link  href="#">DRAWING/DINING <span
                                                     className="icon-left-arrow"></span></Link></li>
-                                        <li><Link href="#">Interior Design <span className="icon-left-arrow"></span></Link></li>
-                                        <li><Link href="#">Ui/Ux Designing <span className="icon-left-arrow"></span></Link></li>
-                                        <li><Link href="#">Building Renovation <span className="icon-left-arrow"></span></Link></li>
-                                        <li><Link href="#">Construction Site <span className="icon-left-arrow"></span></Link></li>
-                                        <li><Link href="#">Security System <span className="icon-left-arrow"></span></Link></li>
+                                        <li><Link href="#">BEDROOMS <span className="icon-left-arrow"></span></Link></li>
+                                        <li><Link href="#">KITCHEN AND WORK AREA <span className="icon-left-arrow"></span></Link></li>
+                                        <li><Link href="#">BATHROOMS <span className="icon-left-arrow"></span></Link></li>
+                                        <li><Link href="#">DOORS & WINDOWS <span className="icon-left-arrow"></span></Link></li>
+                                        {/* <li><Link href="#">Security System <span className="icon-left-arrow"></span></Link></li> */}
                                     </ul>
                                 </div>
                                 {/*End Sidebar Single */}
 
                                 {/*Start Sidebar Single */}
-                                <div className="sidebar__single sidebar__recent-post">
+                                {/* <div className="sidebar__single sidebar__recent-post">
                                     <h3 className="sidebar__title">Recent Post</h3>
 
                                     <ul className="sidebar__recent-post-box">
@@ -242,11 +248,11 @@ export default function Home() {
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
+                                </div> */}
                                 {/*End Sidebar Single */}
 
                                 {/*Start Sidebar Single */}
-                                <div className="sidebar__single sidebar__tags">
+                                {/* <div className="sidebar__single sidebar__tags">
                                     <h3 className="sidebar__title">Tags</h3>
                                     <ul className="sidebar__tags-list clearfix">
                                         <li><Link href="#">IT Technology</Link></li>
@@ -257,8 +263,14 @@ export default function Home() {
                                         <li><Link href="#">Digital</Link></li>
                                         <li><Link href="#">Cyber</Link></li>
                                     </ul>
-                                </div>
+                                </div> */}
                                 {/*End Sidebar Single */}
+
+                                
+
+                                <div className="blog-details__content-img1">
+                                    <img src="assets/img/project/5.png" alt=""/>
+                                </div>
                             </div>
                         </div>
                         {/*End Sidebar */}

@@ -54,17 +54,17 @@ const swiperOptions = {
 export default function TestimonialSlider4() {
     return (
         <>
-            <Swiper {...swiperOptions} className="thm-swiper__slider swiper-container">
+            <Swiper {...swiperOptions} className="thm-swiper__slider swiper-container" >
                         
 
                         <div className="swiper-wrapper">
 
-                            <SwiperSlide className="swiper-slide">
+                            <SwiperSlide className="swiper-slide" >
                                 {/*Start Testimonials Two Single */}
                                 <div className="testimonials-two__single">
                                     <div className="testimonials-two__single-top">
-                                        <div className="img-box">
-                                            <img src="assets/img/testimonial/testimonials-v2-img1.jpg" alt=""/>
+                                        <div className="img-box" >
+                                            {/* <img src="assets/img/testimonial/testimonials-v2-img1.jpg" alt=""/> */}
                                         </div>
 
                                         <div className="icon-box">
@@ -91,7 +91,7 @@ export default function TestimonialSlider4() {
                                 <div className="testimonials-two__single">
                                     <div className="testimonials-two__single-top">
                                         <div className="img-box">
-                                            <img src="assets/img/testimonial/testimonials-v2-img1.jpg" alt=""/>
+                                            {/* <img src="assets/img/testimonial/testimonials-v2-img1.jpg" alt=""/> */}
                                         </div>
 
                                         <div className="icon-box">
@@ -104,6 +104,7 @@ export default function TestimonialSlider4() {
                                             The layouts are practical, the spaces feel airy,
                                              and the finishing touches really add a sense of comfort and style. </p>
                                     </div>
+                                    <br/>
 
                                     <div className="testimonials-two__single-bottom">
                                         <h3>Rajesh Kumar</h3>
@@ -118,7 +119,7 @@ export default function TestimonialSlider4() {
                                 <div className="testimonials-two__single">
                                     <div className="testimonials-two__single-top">
                                         <div className="img-box">
-                                            <img src="assets/img/testimonial/testimonials-v2-img1.jpg" alt=""/>
+                                            {/* <img src="assets/img/testimonial/testimonials-v2-img1.jpg" alt=""/> */}
                                         </div>
 
                                         <div className="icon-box">
@@ -143,7 +144,7 @@ export default function TestimonialSlider4() {
                                 <div className="testimonials-two__single">
                                     <div className="testimonials-two__single-top">
                                         <div className="img-box">
-                                            <img src="assets/img/testimonial/testimonials-v2-img1.jpg" alt=""/>
+                                            {/* <img src="assets/img/testimonial/testimonials-v2-img1.jpg" alt=""/> */}
                                         </div>
 
                                         <div className="icon-box">
@@ -170,7 +171,7 @@ export default function TestimonialSlider4() {
                                 <div className="testimonials-two__single">
                                     <div className="testimonials-two__single-top">
                                         <div className="img-box">
-                                            <img src="assets/img/testimonial/testimonials-v2-img1.jpg" alt=""/>
+                                            {/* <img src="assets/img/testimonial/testimonials-v2-img1.jpg" alt=""/> */}
                                         </div>
 
                                         <div className="icon-box">
@@ -183,7 +184,7 @@ export default function TestimonialSlider4() {
                                             The layouts are practical, the spaces feel airy,
                                              and the finishing touches really add a sense of comfort and style. </p>
                                     </div>
-
+<br/>
                                     <div className="testimonials-two__single-bottom">
                                         <h3>Rajesh Kumar</h3>
                                         {/* <p>Designer</p> */}
@@ -197,7 +198,7 @@ export default function TestimonialSlider4() {
                                 <div className="testimonials-two__single">
                                     <div className="testimonials-two__single-top">
                                         <div className="img-box">
-                                            <img src="assets/img/testimonial/testimonials-v2-img1.jpg" alt=""/>
+                                            {/* <img src="assets/img/testimonial/testimonials-v2-img1.jpg" alt=""/> */}
                                         </div>
 
                                         <div className="icon-box">

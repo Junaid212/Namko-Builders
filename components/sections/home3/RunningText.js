@@ -13,13 +13,13 @@ export default function RunningText() {
                 <div className="scrolling-text-one">
                     <div className="scrolling-text-one__wrap" style={{paddingBottom:'80px'}}>
                         <div className="scrolling-text-one__title">
-                            <h2>NAMKO DESIGNED FOR LIFE</h2>
+                            <h2>NAMKO DESIGNED FOR LIFE.</h2>
                         </div>
                         <div className="scrolling-text-one__title">
-                            <h2>NAMKO DESIGNED FOR LIFE</h2>
+                            <h2>NAMKO DESIGNED FOR LIFE.</h2>
                         </div>
                         <div className="scrolling-text-one__title">
-                            <h2>NAMKO DESIGNED FOR LIFE</h2>
+                            <h2>NAMKO DESIGNED FOR LIFE.</h2>
                         </div>
                     </div>
                 </div>

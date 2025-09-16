@@ -32,9 +32,9 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background: #000d24;
-    opacity: 0.75;
-    z-index: -2;
+    /* background: #00112d; */
+    /* opacity: 0.75; */
+    /* z-index: -2; */
     content: "";
 }
 

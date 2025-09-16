@@ -41,7 +41,7 @@ export default function Banner() {
                 <Swiper {...swiperOptions} className="swiper-wrapper">
                     {/* Start Swiper Slide Single*/}
                     <SwiperSlide  className="swiper-slide">
-                        <div className="image-layer" style={{backgroundImage: 'url(assets/img/slider/slider-v2-img1.jpg)'}}></div>
+                        <div className="image-layer" style={{backgroundImage: 'url(assets/img/slider/banner-main.jpg)'}}></div>
                         <div className="main-slider-two__pattern"
                             style={{backgroundImage: 'url(assets/img/pattern/main-slider-v2-pattern.png)'}}></div>
 
@@ -82,7 +82,7 @@ export default function Banner() {
                     {/*End Swiper Slide Single */}
                     {/* Start Swiper Slide Single*/}
                     <SwiperSlide  className="swiper-slide">
-                        <div className="image-layer" style={{backgroundImage: 'url(assets/img/slider/slider-v2-img1.jpg)'}}></div>
+                        <div className="image-layer" style={{backgroundImage: 'url(assets/img/slider//banner-main.jpg)'}}></div>
                         <div className="main-slider-two__pattern"
                             style={{backgroundImage: 'url(assets/img/pattern/main-slider-v2-pattern.png)'}}></div>
 
@@ -123,7 +123,7 @@ export default function Banner() {
                     {/*End Swiper Slide Single */}
                     {/* Start Swiper Slide Single*/}
                     <SwiperSlide  className="swiper-slide">
-                    <div className="image-layer" style={{backgroundImage: 'url(assets/img/slider/slider-v2-img1.jpg)'}}>
+                    <div className="image-layer" style={{backgroundImage: 'url(assets/img/slider//banner-main.jpg)'}}>
                         </div>
                         <div className="main-slider-two__pattern"
                             style={{backgroundImage: 'url(assets/img/pattern/main-slider-v2-pattern.png)'}}></div>

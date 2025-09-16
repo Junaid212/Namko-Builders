@@ -20,12 +20,12 @@ export default function Home() {
                             <div className="about-three__img">
                                 <div className="about-three__img1">
                                     <div className="inner">
-                                        <img src="assets/img/about/about-v3-img1.jpg" alt=""/>
+                                        <img src="assets/img/about/s1.png" alt=""/>
                                     </div>
 
                                     <div className="experience-box">
                                         <div className="counter-box">
-                                            <h2 className="count"><CounterUp end={24} />
+                                            <h2 className="count"><CounterUp end={14} />
                                             </h2>
                                         </div>
                                         <div className="text-box">
@@ -40,13 +40,13 @@ export default function Home() {
                                     <ul>
                                         <li>
                                             <div className="about-three__img2-single">
-                                                <img src="assets/img/about/about-v3-img2.jpg" alt=""/>
+                                                <img src="assets/img/about/s2.png" alt=""/>
                                             </div>
                                         </li>
 
                                         <li>
                                             <div className="about-three__img2-single">
-                                                <img src="assets/img/about/about-v3-img3.jpg" alt=""/>
+                                                <img src="assets/img/about/s3.png" alt=""/>
                                             </div>
                                         </li>
                                     </ul>
@@ -99,14 +99,14 @@ export default function Home() {
                                             </Link>
                                         </div>
 
-                                        <div className="author-info">
+                                        {/* <div className="author-info">
                                             <div className="img-box">
                                                 <img src="assets/img/about/about-v1-img2.jpg" alt=""/>
                                             </div>
                                             <div className="signature-box">
                                                 <img src="assets/img/about/signature-1.png" alt=""/>
                                             </div>
-                                        </div>
+                                        </div> */}
                                     </div>
                                     <div className="text">
                                         <h4>Do you have any project on your mind? Call Us: <a href="tel:123456789">+91 81979 82888</a></h4>
@@ -298,9 +298,8 @@ export default function Home() {
                                             <span className="icon-construction"></span>
                                         </div>
                                         <div className="content-box">
-                                            <h2><Link href="/architecture">General Contracting</Link></h2>
-                                            <p>Through a unique combination of construction and design disciplines expertise,
-                                                Concor and delivers world class</p>
+                                            <h2><Link href="/architecture">Quality Craftsmanship</Link></h2>
+                                            <p>Every project is built with attention to detail and lasting strength.</p>
                                             <div className="btn-box">
                                                 <Link href="/architecture">EXPLORE SERVICE</Link>
                                             </div>
@@ -320,9 +319,8 @@ export default function Home() {
                                             <span className="icon-construction-machine"></span>
                                         </div>
                                         <div className="content-box">
-                                            <h2><Link href="/architecture">Machine Design</Link></h2>
-                                            <p>Through a unique combination of construction and design disciplines expertise,
-                                                Concor and delivers world class</p>
+                                            <h2><Link href="/architecture">Innovative Designs</Link></h2>
+                                            <p>Spaces created with modern ideas that balance beauty and function.</p>
                                             <div className="btn-box">
                                                 <Link href="/architecture">EXPLORE SERVICE</Link>
                                             </div>
@@ -342,9 +340,8 @@ export default function Home() {
                                             <span className="icon-check-list"></span>
                                         </div>
                                         <div className="content-box">
-                                            <h2><Link href="/architecture">Project Planing</Link></h2>
-                                            <p>Through a unique combination of construction and design disciplines expertise,
-                                                Concor and delivers world class</p>
+                                            <h2><Link href="/architecture">Sustainable Practices</Link></h2>
+                                            <p>We use eco-friendly methods and materials for a better tomorrow.</p>
                                             <div className="btn-box">
                                                 <Link href="/architecture">EXPLORE SERVICE</Link>
                                             </div>
@@ -364,9 +361,8 @@ export default function Home() {
                                             <span className="icon-interior-design"></span>
                                         </div>
                                         <div className="content-box">
-                                            <h2><Link href="/architecture">Interior Design</Link></h2>
-                                            <p>Through a unique combination of construction and design disciplines expertise,
-                                                Concor and delivers world class</p>
+                                            <h2><Link href="/architecture">Customer Trust</Link></h2>
+                                            <p>Honesty, transparency, and commitment guide everything we do.</p>
                                             <div className="btn-box">
                                                 <Link href="/architecture">EXPLORE SERVICE</Link>
                                             </div>
@@ -383,10 +379,10 @@ export default function Home() {
                {/*Start Call To Action One */}
                 <section className="call-to-action-one">
                     <div className="call-to-action-one__bg"
-                        style={{backgroundImage: 'url(assets/img/background/call-to-action-v1-bg.jpg)'}}></div>
+                        style={{backgroundImage: 'url(assets/img/background/banner-hmdown.png)'}}></div>
                     <div className="container">
                         <div className="call-to-action-one__inner">
-                            <div className="call-to-action-one__content text-center">
+                            <div className="call-to-action-one__content text-center" style={{marginTop:'-80px', marginBottom:"-110px"}}>
                                 <h2> Make Your Dream Home a Reality</h2>
                                 <h3>Don’t Hesitate to Say Hello </h3>
                                 <div className="btn-box">
