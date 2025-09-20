@@ -5,14 +5,14 @@ export default function About() {
         <>
             {/*Start About One */}
             <section className="about-one">
-                <div className="shape1 float-bob-y"><img src="assets/img/shape/about-v1-shape1.png" alt=""/></div>
+                <div className="shape1 float-bob-y"><img src="assets/img/shape/ab1.jpg" alt=""/></div>
                 <div className="container">
                     <div className="row">
                         {/*Start About One Img */}
                         <div className="col-xl-5 wow animated fadeInRight" data-wow-delay="0.1s">
                             <div className="about-one__img">
                                 <div className="inner">
-                                    <img src="assets/img/about/about-v1-img1.jpg" alt=""/>
+                                    <img src="assets/img/about/ab1.jpg" alt=""/>
                                 </div>
                                 <div className="experience-box">
                                     <div className="counter-box">

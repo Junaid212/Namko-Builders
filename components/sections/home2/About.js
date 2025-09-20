@@ -15,82 +15,121 @@ export default function About() {
     <>
 
         <section className="about-two">
-            <div className="container">
-                <div className="row">
-                    {/*Start About Two Img */}
-                    <div className="col-xl-6">
-                        <div className="about-two__img">
-                            <div className="about-two__img1 wow fadeInLeft" data-wow-delay="200ms"
-                                data-wow-duration="1500ms">
-                                <div className="inner">
-                                    <img src="assets/img/about/ab1.png" alt=""/>
-                                </div>
-                            </div>
-                            <div className="about-two__img2 wow fadeInRight" data-wow-delay="200ms"
-                                data-wow-duration="1500ms">
-                                <img src="assets/img/about/about-v2-img2.jpg" alt=""/>
-                                <div className="about-two__video-btn">
-                                    <a onClick={() => setOpen(true)} className="about-two__icon video-popup">
-                                        <span className="icon-play-button-1"></span>
-                                    </a>
-                                </div>
-                            </div>
+    <div className="container">
+        <div className="row">
+            {/*Start About Two Img */}
+            <div className="col-xl-6">
+                <div className="about-two__img">
+                    <div className="about-two__img1 wow fadeInLeft" data-wow-delay="200ms"
+                        data-wow-duration="1500ms">
+                        <div className="inner">
+                            <img src="assets/img/about/ab1.png" alt=""/>
                         </div>
                     </div>
-                    {/*End About Two Img */}
-
-                    {/*Start About Two Content */}
-                    <div className="col-xl-6">
-                        <div className="about-two__content">
-                            <div className="sec-title">
-                                <div className="sub-title">
-                                    <h5>KNOW ABOUT NAMKO</h5>
-                                </div>
-                                <h2>Excellence in Every Detail <br/>
-                                    </h2>
-                            </div>
-
-                            <div className="about-two__content-text">
-                                <p>Our promise is simple: thoughtful planning, superior craftsmanship, and a living experience that reflects true excellence.</p>
-                            </div>
-
-                            <div className="about-two__content-list">
-                                <ul>
-                                    <li>
-                                        <p><span className="icon-verified"></span> Smart designs tailored to your lifestyle</p>
-                                    </li>
-                                    <li>
-                                        <p><span className="icon-verified"></span> Built with care, built to last</p>
-                                    </li>
-                                    <li>
-                                        <p><span className="icon-verified"></span>Homes that feel welcoming every day</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="about-two__content-bottom">
-                                {/* <div className="author-box">
-                                    <div className="img-box">
-                                        <img src="assets/img/about/about-v2-img3.jpg" alt=""/>
-                                    </div>
-                                    <div className="signature">
-                                        <img src="assets/img/about/signature-1.png" alt=""/>
-                                    </div>
-                                </div> */}
-
-                                <div className="btn-box">
-                                    <Link className="thm-btn" href="/about">
-                                        <span className="txt">Discover More</span>
-                                    </Link>
-                                </div>
-                            </div>
+                    <div className="about-two__img2 wow fadeInRight" data-wow-delay="200ms"
+                        data-wow-duration="1500ms">
+                        <img src="assets/img/project/7n.png" alt=""/>
+                        <div className="about-two__video-btn">
+                            <a onClick={() => setOpen(true)} className="about-two__icon video-popup" style={{cursor: 'pointer'}}>
+                                <span className="icon-play-button-1"></span>
+                            </a>
                         </div>
                     </div>
-                    {/*End About Two Content */}
                 </div>
             </div>
-        </section>
-        {/*End About Two */}
-        <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="vfhzo499OeA" onClose={() => setOpen(false)} />
+            {/*End About Two Img */}
+
+            {/*Start About Two Content */}
+            <div className="col-xl-6">
+                <div className="about-two__content">
+                    <div className="sec-title">
+                        <div className="sub-title">
+                            <h5>KNOW ABOUT NAMKO</h5>
+                        </div>
+                        <h2>Excellence in Every Detail <br/>
+                            </h2>
+                    </div>
+
+                    <div className="about-two__content-text">
+                        <p>Our promise is simple: thoughtful planning, superior craftsmanship, and a living experience that reflects true excellence.</p>
+                    </div>
+
+                    <div className="about-two__content-list">
+                        <ul>
+                            <li>
+                                <p><span className="icon-verified"></span> Smart designs tailored to your lifestyle</p>
+                            </li>
+                            <li>
+                                <p><span className="icon-verified"></span> Built with care, built to last</p>
+                            </li>
+                            <li>
+                                <p><span className="icon-verified"></span>Homes that feel welcoming every day</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="about-two__content-bottom">
+                        <div className="btn-box">
+                            <Link className="thm-btn" href="/about">
+                                <span className="txt">Discover More</span>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/*End About Two Content */}
+        </div>
+    </div>
+    
+    {/* Video Modal */}
+    {isOpen && (
+        <div className="video-modal-overlay" style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            backgroundColor: 'rgba(0, 0, 0, 0.8)',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            zIndex: 9999,
+        }}>
+            <div className="video-modal-content" style={{
+                position: 'relative',
+                width: '80%',
+                maxWidth: '800px',
+            }}>
+                <button 
+                    onClick={() => setOpen(false)}
+                    style={{
+                        position: 'absolute',
+                        top: '-40px',
+                        right: '0',
+                        background: 'transparent',
+                        border: 'none',
+                        color: '#fff',
+                        fontSize: '24px',
+                        cursor: 'pointer',
+                    }}
+                >
+                    ×
+                </button>
+                <video 
+                    controls 
+                    autoPlay 
+                    style={{
+                        width: '100%',
+                        borderRadius: '8px',
+                    }}
+                >
+                    {/* Replace with your uploaded video path */}
+                    <source src="assets/Namko builders 2 with audio out.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    )}
+</section>
 
 
 

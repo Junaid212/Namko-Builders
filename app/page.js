@@ -15,7 +15,7 @@ import RunningText from "@/components/sections/home3/RunningText"
 export default function Home() {
 
     return (
-        
+
         <>
             <Layout headerStyle={2} footerStyle={1}>
                 <Banner />
@@ -24,11 +24,6 @@ export default function Home() {
                 <StatsSection/>
                 <Services />
                 <Projects />
-                
-                {/* <Pricing /> */}
-                {/* <Contact /> */}
-                {/* <Brand /> */}
-                {/* <WhyChooseUs /> */}
                 <News />
                 <Action />
                 
