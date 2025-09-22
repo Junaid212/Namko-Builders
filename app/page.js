@@ -12,6 +12,8 @@ import Brand from "@/components/sections/home2/Brand"
 import WhyChooseUs from "@/components/sections/home2/WhyChooseUs"
 import StatsSection from "@/components/sections/home2/StatsSection"
 import RunningText from "@/components/sections/home3/RunningText"
+import FloorPlansSection from "@/components/sections/home2/FloorPlansSection"
+import SpecificationsSection from "@/components/sections/home2/SpecificationsSection"
 export default function Home() {
 
     return (
@@ -20,9 +22,13 @@ export default function Home() {
             <Layout headerStyle={2} footerStyle={1}>
                 <Banner />
                 <Features />
+                
                 <About />
                 <StatsSection/>
+                <FloorPlansSection/>
+
                 <Services />
+                {/* <SpecificationsSection/> */}
                 <Projects />
                 <News />
                 <Action />

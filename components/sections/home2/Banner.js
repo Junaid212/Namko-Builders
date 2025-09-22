@@ -1,5 +1,5 @@
 'use client'
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import React from 'react';
 import Link from "next/link"
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
@@ -30,7 +30,24 @@ const swiperOptions = {
 
 export default function Banner() {
     const [isOpen, setOpen] = useState(false)
+    const [isMobile, setIsMobile] = useState(false)
     const videoRef = useRef(null)
+    
+    // Check screen size on component mount and resize
+    useEffect(() => {
+        const checkScreenSize = () => {
+            setIsMobile(window.innerWidth <= 768)
+        }
+        
+        // Initial check
+        checkScreenSize()
+        
+        // Add event listener for window resize
+        window.addEventListener('resize', checkScreenSize)
+        
+        // Cleanup
+        return () => window.removeEventListener('resize', checkScreenSize)
+    }, [])
     
     // Function to handle opening the video modal
     const handleOpenVideo = () => {
@@ -51,7 +68,15 @@ export default function Banner() {
                 <Swiper {...swiperOptions} className="swiper-wrapper">
                     {/* Start Swiper Slide Single*/}
                     <SwiperSlide className="swiper-slide">
-                        <div className="image-layer" style={{backgroundImage: 'url(assets/img/slider/banner-main.jpg)'}}></div>
+                        {/* Use vertical image for mobile, horizontal for desktop */}
+                        <div 
+                            className="image-layer" 
+                            style={{
+                                backgroundImage: isMobile 
+                                    ? 'url(assets/img/slider/m-banner.webp)' 
+                                    : 'url(assets/img/slider/banner-main.jpg)'
+                            }}
+                        ></div>
                         <div className="main-slider-two__pattern"
                             style={{backgroundImage: 'url(assets/img/pattern/main-slider-v2-pattern.png)'}}></div>
 
@@ -68,7 +93,7 @@ export default function Banner() {
                                     <div className="big-title">
                                         <h2>NAMKO</h2>
                                     </div>
-                                    <h2>Homes Designed<br/>
+                                    <h2>Homes Designed <br/>
                                         for the Way You Live</h2>
                                     <div className="btn-box">
                                         <div className="btn-one">
@@ -92,7 +117,15 @@ export default function Banner() {
                     {/*End Swiper Slide Single */}
                     {/* Start Swiper Slide Single*/}
                     <SwiperSlide className="swiper-slide">
-                        <div className="image-layer" style={{backgroundImage: 'url(assets/img/slider//banner-main.jpg)'}}></div>
+                        {/* Use vertical image for mobile, horizontal for desktop */}
+                        <div 
+                            className="image-layer" 
+                            style={{
+                                backgroundImage: isMobile 
+                                    ? 'url(assets/img/slider/m-banner.webp)' 
+                                    : 'url(assets/img/slider/banner-main.jpg)'
+                            }}
+                        ></div>
                         <div className="main-slider-two__pattern"
                             style={{backgroundImage: 'url(assets/img/pattern/main-slider-v2-pattern.png)'}}></div>
 
@@ -109,7 +142,7 @@ export default function Banner() {
                                     <div className="big-title">
                                         <h2>NAMKO</h2>
                                     </div>
-                                    <h2>Homes Designed<br/>
+                                    <h2>Homes Designed <br/>
                                         for the Way You Live</h2>
                                     <div className="btn-box">
                                         <div className="btn-one">

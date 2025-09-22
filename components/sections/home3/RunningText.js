@@ -3,7 +3,6 @@ import { useState } from 'react'
 import ModalVideo from 'react-modal-video'
 import React from 'react';
 
-
 export default function RunningText() {
     const [isOpen, setOpen] = useState(false)
     return (
@@ -11,7 +10,7 @@ export default function RunningText() {
             {/*Start Video One */}
             <section className="video-one video-one--two">
                 <div className="scrolling-text-one">
-                    <div className="scrolling-text-one__wrap" style={{paddingBottom:'80px'}}>
+                    <div className="scrolling-text-one__wrap" style={{paddingBottom: '80px'}}>
                         <div className="scrolling-text-one__title">
                             <h2>NAMKO DESIGNED FOR LIFE.</h2>
                         </div>
@@ -24,25 +23,46 @@ export default function RunningText() {
                     </div>
                 </div>
                 <div className="video-one__pattern"><img src="assets/img/pattern/pan.png" alt=""/></div>
-                {/* <div className="auto-container">
-                    <div className="video-one__inner text-center">
-                        <div className="shape1 float-bob-x"><img src="assets/img/shape/video-v1-shape1.png" alt=""/></div>
-                        <div className="video-one__bg" style={{backgroundImage: 'url(assets/img/background/video-v1-bg.jpg)'}}>
-                        </div>
-                        <div className="title-box">
-                            <h2>We Are The Leader n <br/>
-                                the Architectural</h2>
-                        </div>
-                        <div className="video-one__video-btn">
-                            <a onClick={() => setOpen(true)} className="video-one__icon video-popup">
-                                <span className="icon-play-button-1"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div> */}
+                
+                {/* Mobile Responsive Styles */}
+                <style jsx>{`
+                    /* Mobile Responsive Styles */
+                    @media (max-width: 768px) {
+                        .scrolling-text-one__wrap {
+                            padding-bottom: 40px !important;
+                        }
+                        
+                        .scrolling-text-one__title h2 {
+                            font-size: 1.5rem !important;
+                            white-space: nowrap;
+                        }
+                        
+                        .video-one__pattern img {
+                            max-width: 80%;
+                            height: auto;
+                        }
+                    }
+                    
+                    /* Small Mobile Devices */
+                    @media (max-width: 480px) {
+                        .scrolling-text-one__title h2 {
+                            font-size: 5.2rem !important;
+                            letter-spacing: 1px;
+                            
+
+                        }
+                        
+                        .scrolling-text-one__wrap {
+                            padding-bottom: 80px !important;
+                        }
+                            .video-one__pattern img {
+                            max-width: 200%;
+                            height: 272px;
+                        }
+                    }
+                `}</style>
             </section>
             {/*End Video One */}
-            {/* <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="vfhzo499OeA" onClose={() => setOpen(false)} /> */}
         </>
     )
 }

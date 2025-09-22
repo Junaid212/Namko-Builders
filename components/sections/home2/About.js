@@ -224,8 +224,7 @@ export default function About() {
                                             </div> */}
                                         </div>
                                         <div className="text">
-                                            <h4>Do you have any project on your mind? Call Us: <Link href="tel:123456789">+123
-                                                    456789</Link></h4>
+                                            <h4>Do you have any project on your mind? Call Us: <Link href="tel:91 81979 82888">+91 81979 82888</Link></h4>
                                         </div>
                                     </div>
                                 </div>

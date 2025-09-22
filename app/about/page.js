@@ -5,6 +5,7 @@ import BrandSlider2 from '@/components/slider/BrandSlider2'
 import Layout from "@/components/layout/Layout"
 import CounterUp from "@/components/elements/CounterUp"
 import FeautureTwo from "@/components/sections/home1/FeautureTwo"
+import AmenitiesSection from "@/components/sections/home2/AmenitiesSection"
 
 export default function Home() {
     
@@ -59,6 +60,7 @@ export default function Home() {
                 </section>
                 {/*End About One */}
 <FeautureTwo/>
+<AmenitiesSection/>
 
                  {/*Start Why Choose Us One */}
                 <div className="why-choose-us-one">
@@ -194,13 +196,13 @@ export default function Home() {
 
 
                 {/*Start Team Two */}
-                <section className="team-two">
+                <section className="team-two" style={{backgroundColor:'black'}}>
     <div className="container">
         <div className="sec-title text-center">
             <div className="sub-title">
                 <h5>OUR TEAM MEMBER</h5>
             </div>
-            <h2>Our Talented Team <br/>
+            <h2 style={{color:'white'}}>Our Talented Team <br/>
                 Member Behind Namko</h2>
         </div>
         {/* Add justify-content-center to center the columns */}
