@@ -96,7 +96,7 @@ export default function Footer1() {
                     <div className="container">
                         <div className="footer-bottom__inner">
                             <div className="footer-bottom__text text-center">
-                                <p>Copyright © 2025 Namko by <Link href="https://themeforest.net/user/starplate">BRIGHT MEDIA.</Link> All Rights Reserved</p>
+                                <p>Copyright © 2025 Namko by <Link href="https://brightmedia.tech " target="blank">BRIGHT MEDIA.</Link> All Rights Reserved</p>
                             </div>
                         </div>
                     </div>

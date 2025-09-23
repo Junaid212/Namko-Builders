@@ -37,26 +37,26 @@ const floorPlans = [
     image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600&h=400&fit=crop&auto=format",
     description: "Spacious 3-bedroom apartment with premium features and dual balconies"
   },
-  {
-    id: "3bhk-c",
-    type: "3 BHK",
-    name: "Type C",
-    area: "1670-1745",
-    price: "₹58-68 Lakhs",
-    features: ["3 Bedrooms", "2 Bathrooms", "Living/Dining", "Kitchen", "Balcony"],
-    image: "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&h=400&fit=crop&auto=format",
-    description: "Well-designed 3-bedroom unit with efficient layout and modern amenities"
-  },
-  {
-    id: "duplex",
-    type: "Duplex",
-    name: "Type D, E, F",
-    area: "2470-3510",
-    price: "₹85 Lakhs - 1.2 Cr",
-    features: ["4-5 Bedrooms", "4-5 Bathrooms", "2 Levels", "Multiple Balconies", "Premium"],
-    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=400&fit=crop&auto=format",
-    description: "Luxurious duplex apartments with expansive living spaces across two floors"
-  }
+  // {
+  //   id: "3bhk-c",
+  //   type: "3 BHK",
+  //   name: "Type C",
+  //   area: "1670-1745",
+  //   price: "₹58-68 Lakhs",
+  //   features: ["3 Bedrooms", "2 Bathrooms", "Living/Dining", "Kitchen", "Balcony"],
+  //   image: "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&h=400&fit=crop&auto=format",
+  //   description: "Well-designed 3-bedroom unit with efficient layout and modern amenities"
+  // },
+  // {
+  //   id: "duplex",
+  //   type: "Duplex",
+  //   name: "Type D, E, F",
+  //   area: "2470-3510",
+  //   price: "₹85 Lakhs - 1.2 Cr",
+  //   features: ["4-5 Bedrooms", "4-5 Bathrooms", "2 Levels", "Multiple Balconies", "Premium"],
+  //   image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=400&fit=crop&auto=format",
+  //   description: "Luxurious duplex apartments with expansive living spaces across two floors"
+  // }
 ];
 
 export default function FloorPlansSection() {
@@ -263,7 +263,7 @@ export default function FloorPlansSection() {
   cursor: pointer;
   background-color: #1f2937;
   border: 1px solid #374151;
-  border-radius: 0.5rem;
+  border-radius: 0.1rem;
   transition: all 0.3s ease;
 }
 
@@ -295,7 +295,7 @@ export default function FloorPlansSection() {
   color: black;
   font-weight: 600;
   padding: 0.25rem 0.5rem;
-  border-radius: 0.25rem;
+  border-radius: 0.2rem;
   font-size: 0.875rem;
 }
 
@@ -417,7 +417,7 @@ export default function FloorPlansSection() {
 .features-highlight {
   background-color: #1f2937;
   border: 1px solid #374151;
-  border-radius: 1rem;
+  border-radius: 0.1rem;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   padding: 2rem;
   max-width: 56rem;

@@ -82,6 +82,7 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
                                 <div className={isActive.key == 4 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(4)}><span className="fa fa-angle-right" /></div>
                             </li> */}
                             <li className="menu-item-has-children"><Link href="/blog-details" onClick={handleMobileMenu}>Projects</Link>
+                            
                                 {/* <ul style={{ display: `${isActive.key == 5 ? "block" : "none"}` }}>
                                     <li><Link href="/blog" onClick={handleMobileMenu}>Blog</Link></li>
                                     <li><Link href="/blog-sidebar" onClick={handleMobileMenu}>Blog Sidebar</Link>
@@ -91,6 +92,7 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
                                 </ul> */}
                                 {/* <div className={isActive.key == 5 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(5)}><span className="fa fa-angle-right" /></div> */}
                             </li>
+                            {/* <li className="menu-item-has-children"><Link href="/blog-details" onClick={handleMobileMenu}>Gallery</Link></li> */}
                             <li><Link href="/contact" onClick={handleMobileMenu}>Contact</Link></li>
                         </ul>
                         {/*Here Menu Will Come Automatically Via Javascript / Same Menu as in Header */}

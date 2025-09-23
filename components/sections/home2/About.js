@@ -28,7 +28,7 @@ export default function About() {
                     </div>
                     <div className="about-two__img2 wow fadeInRight" data-wow-delay="200ms"
                         data-wow-duration="1500ms">
-                        <img src="assets/img/project/7n.png" alt=""/>
+                        <img src="assets/img/project/v-img.png" alt=""/>
                         <div className="about-two__video-btn">
                             <a onClick={() => setOpen(true)} className="about-two__icon video-popup" style={{cursor: 'pointer'}}>
                                 <span className="icon-play-button-1"></span>
@@ -46,7 +46,7 @@ export default function About() {
                         <div className="sub-title">
                             <h5>KNOW ABOUT NAMKO</h5>
                         </div>
-                        <h2>Excellence in Every Detail <br/>
+                        <h2 style={{color:'white'}}>Excellence in Every Detail <br/>
                             </h2>
                     </div>
 
@@ -57,7 +57,7 @@ export default function About() {
                     <div className="about-two__content-list">
                         <ul>
                             <li>
-                                <p><span className="icon-verified"></span> Smart designs tailored to your lifestyle</p>
+                                <p><span className="icon-verified" style={{background:'none'}}></span> Smart designs tailored to your lifestyle</p>
                             </li>
                             <li>
                                 <p><span className="icon-verified"></span> Built with care, built to last</p>
@@ -135,7 +135,7 @@ export default function About() {
 
 
 
-<RunningText/>
+
 
 
 

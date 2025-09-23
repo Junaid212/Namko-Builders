@@ -6,6 +6,7 @@ import Layout from "@/components/layout/Layout"
 import CounterUp from "@/components/elements/CounterUp"
 import FeautureTwo from "@/components/sections/home1/FeautureTwo"
 import AmenitiesSection from "@/components/sections/home2/AmenitiesSection"
+import VisionMissionPage from "@/components/sections/home3/VisionMissionPage"
 
 export default function Home() {
     
@@ -59,7 +60,8 @@ export default function Home() {
                     </div>
                 </section>
                 {/*End About One */}
-<FeautureTwo/>
+{/* <FeautureTwo/> */}
+<VisionMissionPage/>
 <AmenitiesSection/>
 
                  {/*Start Why Choose Us One */}

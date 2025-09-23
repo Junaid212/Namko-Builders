@@ -313,9 +313,10 @@
 	About Two Css
 ===============================*/
 .about-two {
+    background-color: #111827;
     position: relative;
     display: block;
-    padding: 0px 0px 120px;
+    padding: 80px 0px 80px;
     z-index: 1;
 }
 

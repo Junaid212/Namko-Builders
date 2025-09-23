@@ -22,7 +22,7 @@ export default function RunningText() {
                         </div>
                     </div>
                 </div>
-                <div className="video-one__pattern"><img src="assets/img/pattern/pan.png" alt=""/></div>
+                {/* <div className="video-one__pattern"><img src="assets/img/pattern/pan.png" alt=""/></div> */}
                 
                 {/* Mobile Responsive Styles */}
                 <style jsx>{`

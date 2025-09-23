@@ -76,7 +76,7 @@ export default function Footer2() {
                 <div className="footer-bottom centred">
                     <div className="auto-container">
                         <div className="copyright">
-                            <p>Copyright © 2025 NAMKO by <Link href="https://themeforest.net/user/starplate">BRIGHT MEDIA.</Link> All Rights Reserved</p>
+                            <p>Copyright © 2025 NAMKO by <Link href="https://brightmedia.tech">BRIGHT MEDIA.</Link> All Rights Reserved</p>
                         </div>
                     </div>
                 </div>

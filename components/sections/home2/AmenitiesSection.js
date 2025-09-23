@@ -191,7 +191,7 @@ export default function AmenitiesSection() {
       <style>{`
       /* Base styles */
 .amenities-section {
-  padding: 5rem 0;
+  padding: 10rem 0;
   background-color: #000;
 }
 
@@ -278,7 +278,7 @@ export default function AmenitiesSection() {
   height: 100%;
   background-color: #374151;
   border: 1px solid #4b5563;
-  border-radius: 0.5rem;
+  border-radius: 0.1rem;
   transition: all 0.3s ease;
 }
 
@@ -297,7 +297,7 @@ export default function AmenitiesSection() {
   height: 4rem;
   background-color: rgba(251, 191, 36, 0.2);
   border: 1px solid rgba(251, 191, 36, 0.3);
-  border-radius: 9999px;
+  border-radius: 99px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -333,7 +333,7 @@ export default function AmenitiesSection() {
 /* Featured amenity section */
 .featured-amenity {
   background: linear-gradient(to right, #facc15, #eab308);
-  border-radius: 1.5rem;
+  border-radius: 0.2rem;
   padding: 2rem;
   color: #000;
   text-align: center;

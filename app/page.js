@@ -14,6 +14,7 @@ import StatsSection from "@/components/sections/home2/StatsSection"
 import RunningText from "@/components/sections/home3/RunningText"
 import FloorPlansSection from "@/components/sections/home2/FloorPlansSection"
 import SpecificationsSection from "@/components/sections/home2/SpecificationsSection"
+import StatsPage from "@/components/sections/home3/StatsPage"
 export default function Home() {
 
     return (
@@ -21,14 +22,16 @@ export default function Home() {
         <>
             <Layout headerStyle={2} footerStyle={1}>
                 <Banner />
-                <Features />
+                {/* <Features /> */}
                 
                 <About />
-                <StatsSection/>
+                <RunningText/>
+                {/* <StatsSection/> */}
+                <StatsPage/>
                 <FloorPlansSection/>
 
                 <Services />
-                {/* <SpecificationsSection/> */}
+                <SpecificationsSection/>
                 <Projects />
                 <News />
                 <Action />
