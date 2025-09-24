@@ -14,7 +14,7 @@ const floorPlans = [
     area: "1420",
     price: "₹45-50 Lakhs",
     features: ["2 Bedrooms", "2 Bathrooms", "Living/Dining", "Kitchen", "Balcony"],
-    image: "https://images.unsplash.com/photo-1586105251261-72a756497a11?w=600&h=400&fit=crop&auto=format",
+    image: "assets/img/gallery/3.webp",
     description: "Compact yet spacious 2-bedroom apartment perfect for small families"
   },
   {
@@ -24,7 +24,7 @@ const floorPlans = [
     area: "1430",
     price: "₹46-51 Lakhs",
     features: ["2 Bedrooms", "2 Bathrooms", "Living/Dining", "Kitchen", "Balcony"],
-    image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&h=400&fit=crop&auto=format",
+    image: "assets/img/gallery/8.webp",
     description: "Enhanced 2-bedroom layout with optimized space utilization"
   },
   {
@@ -34,7 +34,7 @@ const floorPlans = [
     area: "1950-1985",
     price: "₹65-75 Lakhs",
     features: ["3 Bedrooms", "3 Bathrooms", "Living/Dining", "Kitchen", "2 Balconies"],
-    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600&h=400&fit=crop&auto=format",
+    image: "assets/img/gallery/6.webp",
     description: "Spacious 3-bedroom apartment with premium features and dual balconies"
   },
   // {

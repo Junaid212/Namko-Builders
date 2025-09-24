@@ -141,9 +141,9 @@ export default function AmenitiesSection() {
                   <h3 className="amenity-name">
                     {amenity.title}
                   </h3>
-                  <p className="amenity-description">
+                  {/* <p className="amenity-description">
                     {amenity.description}
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
@@ -191,7 +191,7 @@ export default function AmenitiesSection() {
       <style>{`
       /* Base styles */
 .amenities-section {
-  padding: 10rem 0;
+  padding: 5rem 0;
   background-color: #000;
 }
 
@@ -255,6 +255,12 @@ export default function AmenitiesSection() {
   margin-bottom: 4rem;
 }
 
+@media (max-width: 480px) { 
+  .amenities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+ }
+
 @media (min-width: 768px) {
   .amenities-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -276,7 +282,7 @@ export default function AmenitiesSection() {
 /* Amenity card */
 .amenity-card {
   height: 100%;
-  background-color: #374151;
+  background-color: none;
   border: 1px solid #4b5563;
   border-radius: 0.1rem;
   transition: all 0.3s ease;

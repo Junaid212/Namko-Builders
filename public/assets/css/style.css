@@ -363,6 +363,7 @@ h6 {
     transition-duration: 800ms;
     background-color: var(--thm-primary);
     z-index: -1;
+    border-radius: 5px !important;
 }
 
 .thm-btn:hover:after {
@@ -1543,6 +1544,15 @@ Feauture Three
     padding: 120px 0px 80px;
     z-index: 1;
 }
+@media (max-width: 480px) {
+ .feauture-three {
+    position: relative;
+    display: block;
+    background: var(--thm-white);
+    padding: 0px 0px 80px;
+    z-index: 1;
+}
+ }
 
 .feauture-three .shape1 {
     position: absolute;
@@ -5849,6 +5859,7 @@ Project Four Css
 	}
 
 	.service-two__single-text h2 {
+       
 		font-size: 21px;
 		line-height: 33px;
 	}

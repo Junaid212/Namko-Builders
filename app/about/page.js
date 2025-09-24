@@ -7,6 +7,7 @@ import CounterUp from "@/components/elements/CounterUp"
 import FeautureTwo from "@/components/sections/home1/FeautureTwo"
 import AmenitiesSection from "@/components/sections/home2/AmenitiesSection"
 import VisionMissionPage from "@/components/sections/home3/VisionMissionPage"
+import Features from "@/components/sections/home2/Features"
 
 export default function Home() {
     
@@ -63,6 +64,7 @@ export default function Home() {
 {/* <FeautureTwo/> */}
 <VisionMissionPage/>
 <AmenitiesSection/>
+<Features />
 
                  {/*Start Why Choose Us One */}
                 <div className="why-choose-us-one">

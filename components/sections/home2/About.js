@@ -57,7 +57,7 @@ export default function About() {
                     <div className="about-two__content-list">
                         <ul>
                             <li>
-                                <p><span className="icon-verified" style={{background:'none'}}></span> Smart designs tailored to your lifestyle</p>
+                                <p><span className="icon-verified" ></span> Smart designs tailored to your lifestyle</p>
                             </li>
                             <li>
                                 <p><span className="icon-verified"></span> Built with care, built to last</p>

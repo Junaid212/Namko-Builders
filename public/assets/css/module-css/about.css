@@ -376,6 +376,7 @@
 
 .about-two__img2 img {
     width: 100%;
+    border-radius: 5px;
 }
 
 .about-two__video-btn {
@@ -471,9 +472,10 @@
     display: block;
     max-width: 290px;
     width: 100%;
-    background: var(--thm-gray-bg);
+    background: #c5bd9a;
     padding: 8px 20px 7px;
     margin-bottom: 15px;
+    border-radius: 5px;
 }
 
 .about-two__content-list ul li:last-child {

@@ -37,6 +37,20 @@
     /* z-index: -2; */
     content: "";
 }
+@media (max-width: 480px) { 
+    .page-header__bg {
+        position: absolute;
+        height: 250px;
+
+    }
+    .page-header {
+    position: relative;
+    display: block;
+    padding: 82px 0px 200px;
+    overflow: hidden;
+    /* z-index: 1; */
+}
+ }
 
 .page-header__inner {
     position: relative;

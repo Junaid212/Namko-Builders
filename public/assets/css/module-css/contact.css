@@ -5,14 +5,17 @@ Contact Two Css
     position: relative;
     display: block;
     padding: 110px 0px 0px;
+    
 }
 
 .contact-two__inner {
     position: relative;
     display: block;
-    background: var(--thm-gray-bg);
+    background: black;
     padding: 65px 75px 75px;
     z-index: 1;
+    border-radius: 10px;
+    
 }
 
 .contact-two__inner .title-box {
@@ -26,6 +29,7 @@ Contact Two Css
     line-height: 46px;
     font-weight: 700;
     text-transform: capitalize;
+    color: #e4e4e4;
 }
 
 .contact-two__inner .title-box p {
@@ -49,14 +53,15 @@ Contact Two Css
     font-weight: 400;
     width: 100%;
     height: 60px;
-    background: #ffffff;
-    border: 0px solid #e4e4e4;
+    background: #212731;
+    border: 0px solid #212731;
     padding: 0 30px;
     margin-bottom: 20px;
     border-radius: 0px;
     outline: none;
     transition: all 200ms linear;
     transition-delay: 0.1s;
+    border-radius: 10px;
 }
 
 .contact-two form textarea {
@@ -65,14 +70,14 @@ Contact Two Css
     font-weight: 400;
     width: 100%;
     height: 150px;
-    border: 0px solid #e4e4e4;
-    background: #ffffff;
+    border: 0px solid #212731;
+    background: #212731;
     padding: 20px 30px 30px;
     margin-bottom: 10px;
     outline: none;
     transition: all 200ms linear;
     transition-delay: 0.1s;
-    border-radius: 0px;
+    border-radius: 10px;
 }
 
 
@@ -208,16 +213,22 @@ Contact Page Css
 }
 
 .contact-page__top-content-bottom ul li {
+    background-color: #E6A63B;
+    padding: 5px 0px 15px 10px;
+    border-radius: 5px;
+   
     position: relative;
     display: block;
     margin-bottom: 27px;
 }
 
 .contact-page__top-content-bottom ul li:last-child {
+    
     margin-bottom: 0;
 }
 
 .contact-page__top-content-bottom ul li .inner {
+    
     position: relative;
     display: block;
     padding-left: 80px;
@@ -250,6 +261,7 @@ Contact Page Css
 }
 
 .contact-page__top-content-bottom ul li .inner .content-box h4 {
+    padding-top: 1rem;
     font-size: 18px;
     line-height: 28px;
     font-weight: 700;
@@ -268,6 +280,7 @@ Contact Page Css
 }
 
 .contact-page__google-map {
+    /* height: 600px; */
     position: relative;
     display: block;
 }

@@ -70,9 +70,9 @@ export default function Home() {
                                     </div>
                                 </div>
 
-                                <div className="col-xl-6 col-lg-6">
+                                <div className="col-xl-6 col-lg-6" style={{backgroundColor:'#E6A63B'}}>
                                     <div className="contact-page__google-map">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!4v1757762154395!6m8!1m7!1so2cA1mHdsHWoFbljWYYL-Q!2m2!1d12.86264294407403!2d74.83592195284166!3f209.6556950915648!4f33.1684592197137!5f0.7820865974627469" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!4v1757762154395!6m8!1m7!1so2cA1mHdsHWoFbljWYYL-Q!2m2!1d12.86264294407403!2d74.83592195284166!3f209.6556950915648!4f33.1684592197137!5f0.7820865974627469" width="600" height="580" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                     </div>
                                 </div>
                             </div>
