@@ -551,6 +551,7 @@
     display: block;
     padding: 0px 0px 99px;
     z-index: 1;
+    margin-top: 50px;
 }
 
 .about-three__img {

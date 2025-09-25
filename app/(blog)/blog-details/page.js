@@ -15,7 +15,7 @@ export default function Home() {
                         <div className="col-xl-8">
                             <div className="blog-details__content">
                                 <div className="blog-details__content-img1">
-                                    <img src="assets/img/blog/blog1.png" alt=""/>
+                                    <img src="assets/img/blog/prjct-poster.png" alt=""/>
                                 </div>
 
                                 <div className="blog-details__content-text1">

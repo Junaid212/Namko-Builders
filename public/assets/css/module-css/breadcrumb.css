@@ -6,7 +6,7 @@
 .page-header {
     position: relative;
     display: block;
-    padding: 212px 0px 211px;
+    padding: 112px 0px 80px;
     overflow: hidden;
     z-index: 1;
 }
@@ -17,6 +17,7 @@
     left: 0;
     bottom: 0;
     right: 0;
+    height: 320px;
     background: var(--thm-black);
     background-blend-mode: luminosity;
     background-attachment: scroll;

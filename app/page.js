@@ -31,7 +31,7 @@ export default function Home() {
                 <FloorPlansSection/>
 
                 <Services />
-                <SpecificationsSection/>
+                {/* <SpecificationsSection/> */}
                 <Projects />
                 <News />
                 <Action />

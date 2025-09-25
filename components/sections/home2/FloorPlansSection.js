@@ -18,8 +18,8 @@ const floorPlans = [
     description: "Compact yet spacious 2-bedroom apartment perfect for small families"
   },
   {
-    id: "2bhk-b1",
-    type: "2 BHK",
+    id: "3bhk-b1",
+    type: "3 BHK",
     name: "Type B1",
     area: "1430",
     price: "₹46-51 Lakhs",
@@ -28,8 +28,8 @@ const floorPlans = [
     description: "Enhanced 2-bedroom layout with optimized space utilization"
   },
   {
-    id: "3bhk-a",
-    type: "3 BHK",
+    id: "4bhk-a",
+    type: "4 BHK",
     name: "Type A",
     area: "1950-1985",
     price: "₹65-75 Lakhs",
@@ -76,7 +76,7 @@ export default function FloorPlansSection() {
             Choose Your <span className="section-title-accent">Perfect Home</span>
           </h2>
           <p className="section-description">
-            From cozy 2-bedroom apartments to luxurious duplexes, find the perfect space 
+            From cozy bedroom apartments to luxurious duplexes, find the perfect space 
             that matches your lifestyle and dreams.
           </p>
         </div>

@@ -6,23 +6,37 @@ export default function Action() {
         <> 
 
         {/*Start Call To Action One */}
-        <section className="call-to-action-one">
-            <div className="call-to-action-one__bg"
-                style={{backgroundImage: 'url(assets/img/background/banner-hmdown.png)'}}></div>
-            <div className="container">
-                <div className="call-to-action-one__inner text-center" style={{marginTop:'-80px', marginBottom:"-110px"}}>
-                    <div className="call-to-action-one__content ">
-                        <h2>Make Your Dream Home a Reality</h2>
-                        <h3>Don’t Hesitate to Say Hello </h3>
-                        <div className="btn-box">
-                            <a className="thm-btn" href="#">
-                                <span className="txt">Enquire Now</span>
-                            </a>
-                        </div>
-                    </div>
+       <section className="call-to-action-one">
+    {/* Background Video */}
+    <div className="call-to-action-one__bg">
+        <video 
+            autoPlay 
+            muted 
+            loop 
+            playsInline 
+            style={{width:'100%'}}
+        >
+            <source src="assets/v-banner.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    {/* Content */}
+    <div className="container">
+        <div className="call-to-action-one__inner text-center" >
+            <div className="call-to-action-one__content">
+                <h2>Make Your Dream Home a Reality</h2>
+                <h3>Don’t Hesitate to Say Hello</h3>
+                <div className="btn-box">
+                    <a className="thm-btn" href="#">
+                        <span className="txt">Enquire Now</span>
+                    </a>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
+
         {/*End Call To Action One */}
             
         </>

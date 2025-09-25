@@ -82,7 +82,7 @@ export default function Home() {
   return (
      <>
             <Layout headerStyle={4} footerStyle={1} breadcrumbTitle="Contact Us">
-                <div></div>
+                
     <div className="app">
       {/* Header */}
       <div className="header">

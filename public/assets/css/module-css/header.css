@@ -605,12 +605,12 @@
 }
 
 .main-header-one__left .logo-box a img {
-    width: 100%;
+    width: 270px;
 }
 
-@media (max-width: 480px) { 
+@media (min-width: 1280px) { 
     .main-header-one__left .logo-box a img {
-    width: 85%;
+    width: 100%;
 }
 }
 
