@@ -895,6 +895,8 @@
 }
 
 .blog-details__content-img1 {
+    background-color: #ECA62B;
+    padding: 0.5rem;
     position: relative;
     display: block;
     overflow: hidden;

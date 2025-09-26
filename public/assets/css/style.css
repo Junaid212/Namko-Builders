@@ -1541,7 +1541,7 @@ Feauture Three
     position: relative;
     display: block;
     background: var(--thm-white);
-    padding: 120px 0px 80px;
+    padding: 100px 0px 80px;
     z-index: 1;
 }
 @media (max-width: 480px) {
@@ -1549,7 +1549,7 @@ Feauture Three
     position: relative;
     display: block;
     background: var(--thm-white);
-    padding: 0px 0px 80px;
+    padding: 50px 0px 80px;
     z-index: 1;
 }
  }
@@ -2227,9 +2227,11 @@ Call To Action One
 .call-to-action-one {
     position: relative;
     display: block;
-    padding: 161px 0px 180px;
+    padding: 161px 0px 160px;
     z-index: 1;
 }
+
+
 
 .call-to-action-one__bg {
     position: absolute;
@@ -3639,7 +3641,7 @@ Project Details Css
     padding: 43px 45px 42px;
     margin-left: 60px;
     margin-right: 60px;
-    margin-top: -60px;
+    margin-top: -160px;
     z-index: 5;
 }
 
@@ -4701,6 +4703,8 @@ Project Three Project Css
 }
 
 .project-three--project .project-three__single-content {
+    background-color: #CBA244;
+    color: white;
     right: 20px;
     padding-right: 30px;
 }

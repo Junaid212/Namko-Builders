@@ -1,7 +1,153 @@
-
+'use client'
+import { useState } from "react";
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import { 
+  Building2, 
+  Zap, 
+  Power, 
+  Phone, 
+  Tv, 
+  Baby, 
+  Users, 
+  Waves, 
+  Dumbbell, 
+  Shield 
+} from 'lucide-react';
+
+const highlights = [
+  { id: '1', text: 'Multipurpose hall', icon: Building2 },
+  { id: '2', text: '2 automatic elevators', icon: Zap },
+  { id: '3', text: 'Generator for lighting', icon: Power },
+  { id: '4', text: 'Centrex intercom facility', icon: Phone },
+  { id: '5', text: 'Cable TV provision', icon: Tv },
+  { id: '6', text: 'Children\'s play area', icon: Baby },
+  { id: '7', text: 'Visitors lounge', icon: Users },
+  { id: '8', text: 'Swimming & toddler pool', icon: Waves },
+  { id: '9', text: 'Clubhouse & gym', icon: Dumbbell },
+  { id: '10', text: 'CCTV in lounge', icon: Shield },
+];
+
+const styles = {
+  container: {
+    backgroundColor: '#ffffff',
+    borderRadius: '16px',
+    boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+    border: '1px solid #efefefff',
+    overflow: 'hidden',
+  },
+  header: {
+    background: '#ffffffff',
+    padding: '16px 24px'
+  },
+  headerTitle: {
+    fontSize: '24px',
+    fontWeight: '700',
+    color: '#E2A33A',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '8px',
+    margin: 0
+  },
+  headerSubtitle: {
+    color: '#dbeafe',
+    fontSize: '14px',
+    marginTop: '4px',
+    margin: 0
+  },
+  content: {
+    padding: '24px'
+  },
+  grid: {
+    display: 'grid',
+    gap: '12px'
+  },
+  highlightItem: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '16px',
+    padding: '12px',
+    borderRadius: '8px',
+    border: '1px solid #ead284ff',
+    transition: 'all 0.3s ease',
+    cursor: 'pointer'
+  },
+  highlightItemHover: {
+    borderColor: '#f0e68bff',
+    backgroundColor: 'rgba(239, 246, 255, 0.5)'
+  },
+  iconContainer: {
+    flexShrink: 0
+  },
+  iconWrapper: {
+    width: '40px',
+    height: '40px',
+    borderRadius: '50%',
+    backgroundColor: '#f7edbbff',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    transition: 'background-color 0.3s ease'
+  },
+  iconWrapperHover: {
+    backgroundColor: '#f7edbbff'
+  },
+  textContainer: {
+    flex: 1
+  },
+  text: {
+    color: '#1f2937',
+    fontWeight: '500',
+    fontSize: '14px',
+    lineHeight: '1.5',
+    margin: 0,
+    transition: 'color 0.3s ease'
+  },
+  textHover: {
+    color: '#E2A33A'
+  },
+  checkmarkContainer: {
+    flexShrink: 0
+  },
+  checkmark: {
+    width: '20px',
+    height: '20px',
+    borderRadius: '50%',
+    backgroundColor: '#E2A33A',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    opacity: 0.8,
+    transition: 'opacity 0.3s ease'
+  },
+  checkmarkHover: {
+    opacity: 1
+  },
+  footer: {
+    marginTop: '24px',
+    paddingTop: '16px',
+    borderTop: '1px solid #f3f4f6'
+  },
+  footerContent: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    fontSize: '14px',
+    color: '#6b7280'
+  },
+  footerLabel: {
+    fontWeight: '500'
+  },
+  badge: {
+    backgroundColor: '#dbeafe',
+    color: '#1d4ed8',
+    padding: '4px 12px',
+    borderRadius: '9999px',
+    fontWeight: '600'
+  }
+};
 export default function Home() {
+  const [hoveredItem, setHoveredItem] = useState(null);
 
     return (
         <>
@@ -158,34 +304,88 @@ export default function Home() {
                         {/*End Blog Sidebar Content */}
 
                         {/*Start Sidebar */}
-                        <div className="col-xl-4">
-                            <div className="sidebar">
+                        <div className="col-xl-4" >
+                            <div className="sidebar" >
                                 {/*Start Sidebar Single */}
-                                <div className="sidebar__single sidebar__search">
-                                    <h3 className="sidebar__title">Highlights</h3>
-
-                                    <ul className="sidebar__category-list">
-                                        <li><Link href="#">Multipurpose hall in fourth floor. </Link></li>
-                                        <li><Link href="#">2 automatic elevator of reputed brand </Link></li>
-                                        <li><Link href="#">Generator for common and apartment lighting.</Link></li>
-                                        <li><Link href="#">Telephone with centrex facility (intercom) connection.</Link></li>
-                                        <li><Link href="#">Cable T.V. provision. </Link></li>
-                                        <li><Link href="#">Children's play area with play equipments.</Link></li>
-                                        <li><Link href="#">Attractive visitors lounge.</Link></li>
-                                        <li><Link href="#">King size swimming pool with toddler pool at terrace.</Link></li>
-                                        <li><Link href="#">Club house & Gym</Link></li>
-                                        <li><Link href="#">CCTV in visitors lounge.</Link></li>
-                                        <li><Link href="#">Reticulated gas connection.</Link></li>
-                                    </ul>
-                                </div>
+                                <div style={styles.container} >
+      <div style={styles.header}>
+        <h3 style={styles.headerTitle}>
+          {/* <Building2 size={24} /> */}
+           Highlights
+        </h3>
+        {/* <p style={styles.headerSubtitle}>Premium amenities & features</p> */}
+      </div>
+      
+      <div style={styles.content}>
+        <div style={styles.grid}>
+          {highlights.map((highlight, index) => {
+            const Icon = highlight.icon;
+            const isHovered = hoveredItem === highlight.id;
+            
+            return (
+              <div
+                key={highlight.id}
+                style={{
+                  ...styles.highlightItem,
+                  ...(isHovered ? styles.highlightItemHover : {}),
+                  animationDelay: `${index * 100}ms`
+                }}
+                onMouseEnter={() => setHoveredItem(highlight.id)}
+                onMouseLeave={() => setHoveredItem(null)}
+              >
+                <div style={styles.iconContainer}>
+                  <div style={{
+                    ...styles.iconWrapper,
+                    ...(isHovered ? styles.iconWrapperHover : {})
+                  }}>
+                    <Icon 
+                      size={20} 
+                      color={isHovered ? '#E2A33A' : '#E2A33A'}
+                      style={{ transition: 'color 0.3s ease' }}
+                    />
+                  </div>
+                </div>
+                <div style={styles.textContainer}>
+                  <p style={{
+                    ...styles.text,
+                    ...(isHovered ? styles.textHover : {})
+                  }}>
+                    {highlight.text}
+                  </p>
+                </div>
+                {/* <div style={styles.checkmarkContainer}>
+                  <div style={{
+                    ...styles.checkmark,
+                    ...(isHovered ? styles.checkmarkHover : {})
+                  }}>
+                    <svg width="12" height="12" fill="white" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                </div> */}
+              </div>
+            );
+          })}
+        </div>
+        
+        {/* <div style={styles.footer}>
+          <div style={styles.footerContent}>
+            <span style={styles.footerLabel}>Total Amenities</span>
+            <span style={styles.badge}>
+              {highlights.length}
+            </span>
+          </div>
+        </div> */}
+      </div>
+    </div>
                                 {/*End Sidebar Single */}
 
-                                <div className="blog-details__content-img1">
+                                <div className="blog-details__content-img1" style={{marginTop:"20px"}}>
                                     <img src="assets/img/project/4.png" alt=""/>
                                 </div>
 
                                 {/*Start Sidebar Single */}
-                                <div className="sidebar__single sidebar__category">
+                                {/* <div className="sidebar__single sidebar__category">
                                     <h3 className="sidebar__title">Specifications</h3>
 
                                     <ul className="sidebar__category-list">
@@ -195,9 +395,8 @@ export default function Home() {
                                         <li><Link href="#">KITCHEN AND WORK AREA <span className="icon-left-arrow"></span></Link></li>
                                         <li><Link href="#">BATHROOMS <span className="icon-left-arrow"></span></Link></li>
                                         <li><Link href="#">DOORS & WINDOWS <span className="icon-left-arrow"></span></Link></li>
-                                        {/* <li><Link href="#">Security System <span className="icon-left-arrow"></span></Link></li> */}
                                     </ul>
-                                </div>
+                                </div> */}
                                 {/*End Sidebar Single */}
 
                                 {/*Start Sidebar Single */}
@@ -251,18 +450,18 @@ export default function Home() {
                                 {/*End Sidebar Single */}
 
                                 {/*Start Sidebar Single */}
-                                {/* <div className="sidebar__single sidebar__tags">
-                                    <h3 className="sidebar__title">Tags</h3>
+                                <div className="sidebar__single sidebar__tags">
+                                    <h3 className="sidebar__title">Specifications</h3>
                                     <ul className="sidebar__tags-list clearfix">
-                                        <li><Link href="#">IT Technology</Link></li>
-                                        <li><Link href="#">Software</Link></li>
-                                        <li><Link href="#">Design</Link></li>
-                                        <li><Link href="#">Service</Link></li>
-                                        <li><Link href="#">Development</Link></li>
-                                        <li><Link href="#">Digital</Link></li>
-                                        <li><Link href="#">Cyber</Link></li>
+                                        <li><Link href="#">DRAWING/DINING</Link></li>
+                                        <li><Link href="#">BEDROOMS</Link></li>
+                                        <li><Link href="#">KITCHEN </Link></li>
+                                        <li><Link href="#">BATHROOMS</Link></li>
+                                        <li><Link href="#">DOORS</Link></li>
+                                        <li><Link href="#">WINDOWS</Link></li>
+                                        <li><Link href="#">WORK AREA</Link></li>
                                     </ul>
-                                </div> */}
+                                </div>
                                 {/*End Sidebar Single */}
 
                                 

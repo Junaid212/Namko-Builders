@@ -80,10 +80,10 @@ export default function ContactPage() {
           <div className="contactForm">
             <div className="formHeader">
               <h2 className="formTitle">Get in touch</h2>
-              <p className="formDescription">
+              {/* <p className="formDescription">
                 We're here to answer your questions and help you find your perfect home. 
-                Reach out to us, and our team will guide you every step of the way.
-              </p>
+                 Reach out to us, and our team will guide you every step of the way.
+              </p> */}
             </div>
             
             <div className="formFields">
@@ -230,13 +230,13 @@ export default function ContactPage() {
 }
 
 .stepCard:nth-child(2):hover {
-  background: rgba(59, 130, 246, 0.15);
-  border-color: rgba(59, 130, 246, 0.8);
+  background: rgba(240, 190, 8, 0.15);
+  border-color: #f0be08;
 }
 
 .stepCard:nth-child(3):hover {
-  background: rgba(236, 72, 153, 0.15);
-  border-color: rgba(236, 72, 153, 0.8);
+  background: rgba(240, 190, 8, 0.15);
+  border-color: #f0be08;
 }
 
 .stepIconContainer {
@@ -258,13 +258,13 @@ export default function ContactPage() {
 }
 
 .stepCard:nth-child(2) .stepIconContainer {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(59, 130, 246, 0.2));
-  border-color: rgba(59, 130, 246, 0.3);
+  background: linear-gradient(135deg,  rgba(240, 190, 8, 0.1), rgba(240, 190, 8, 0.2));
+  border-color: rgba(240, 190, 8, 0.3);
 }
 
 .stepCard:nth-child(3) .stepIconContainer {
-  background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(236, 72, 153, 0.2));
-  border-color: rgba(236, 72, 153, 0.3);
+  background: linear-gradient(135deg,  rgba(240, 190, 8, 0.1), rgba(240, 190, 8, 0.2));
+  border-color: rgba(240, 190, 8, 0.3);
 }
 
 .stepCard:hover .stepIconContainer {
@@ -282,11 +282,11 @@ export default function ContactPage() {
 }
 
 .stepCard:nth-child(2):hover .stepIconContainer svg {
-  color: #3b82f6;
+  color: #f0be08;
 }
 
 .stepCard:nth-child(3):hover .stepIconContainer svg {
-  color: #ec4899;
+  color: #f0be08;
 }
 
 .stepTitle {
@@ -406,11 +406,11 @@ export default function ContactPage() {
 }
 
 .socialIcon.twitter:hover svg {
-  color: #1da1f2;
+  color: #f0be08;
 }
 
 .socialIcon.instagram:hover svg {
-  color: #e1306c;
+  color: #f0be08;
 }
 
 /* Contact Form */
@@ -457,6 +457,7 @@ export default function ContactPage() {
 @media (min-width: 1024px) {
   .contactForm {
     width: 500px;
+    height: 500px;
   }
 }
 
@@ -488,7 +489,7 @@ export default function ContactPage() {
 .formFields {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
   position: relative;
   z-index: 2;
 }
@@ -504,7 +505,7 @@ export default function ContactPage() {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 1rem;
   color: white;
-  padding: 1rem 1.5rem;
+  padding: 0.7rem 1rem;
   outline: none;
   transition: all 0.3s ease;
   font-family: inherit;
@@ -534,7 +535,7 @@ export default function ContactPage() {
 
 .formButton {
   width: 100%;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   background: linear-gradient(135deg, #f0be08, #fbbf24);
   color: #1f2937;
   padding: 1rem 2rem;
@@ -580,7 +581,7 @@ export default function ContactPage() {
   flex: 1;
   min-height: 500px;
   position: relative;
-  border-radius: 2rem;
+  border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
   background: rgba(255, 255, 255, 0.1);
@@ -591,7 +592,7 @@ export default function ContactPage() {
 .mapContainer {
   position: relative;
   height: 500px;
-  border-radius: 2rem;
+  border-radius: 1rem;
   overflow: hidden;
 }
 
@@ -649,7 +650,8 @@ export default function ContactPage() {
   }
   
   .contactForm {
-    padding: 1.25rem;
+    padding: 1rem;
+    margin-left: -1px;
   }
   
   .formTitle {
@@ -660,6 +662,12 @@ export default function ContactPage() {
     width: 3rem;
     height: 3rem;
   }
+    .mapContainer {
+    height: 450px;
+  }
+    .mapSection {
+    min-height: 450px;
+    }
 }
       `}</style>
     </div>

@@ -21,7 +21,7 @@ export default function News() {
                         <div className="blog-one__single">
                             <div className="blog-one__single-img">
                                 <div className="inner">
-                                    <img src="assets/img/blog/1.png" alt=""/>
+                                    <img src="assets/img/gallery/1.webp" alt=""/>
                                     <div className="overlay-icon">
                                         <Link href="#"><span className="icon-plus"></span></Link>
                                     </div>
@@ -50,7 +50,7 @@ export default function News() {
                         <div className="blog-one__single">
                             <div className="blog-one__single-img">
                                 <div className="inner">
-                                    <img src="assets/img/blog/2.png" alt=""/>
+                                    <img src="assets/img/gallery/10.webp" alt=""/>
                                     <div className="overlay-icon">
                                         <Link href="#"><span className="icon-plus"></span></Link>
                                     </div>
@@ -80,7 +80,7 @@ export default function News() {
                         <div className="blog-one__single">
                             <div className="blog-one__single-img">
                                 <div className="inner">
-                                    <img src="assets/img/blog/3.png" alt=""/>
+                                    <img src="assets/img/gallery/46.webp" alt=""/>
                                     <div className="overlay-icon">
                                         <Link href="#"><span className="icon-plus"></span></Link>
                                     </div>

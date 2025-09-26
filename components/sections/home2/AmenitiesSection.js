@@ -1,7 +1,6 @@
 'use client'
 import React from "react";
-import { Waves,Dumbbell, Users, Car, Shield, Zap, Phone, Tv, Baby, Flame, Building } from "lucide-react";
-
+import { Waves, Dumbbell, Users, Car, Shield, Zap, Phone, Tv, Baby, Flame, Building } from "lucide-react";
 
 const amenities = [
   { icon: Waves, title: "Swimming Pool" },
@@ -194,16 +193,13 @@ export default function AmenitiesSection() {
           .amenities-grid {
             grid-template-columns: repeat(6, 1fr);
           }
-            
         }
 
-        /* Amenity card */
+        /* Amenity card - Updated for single row layout */
         .amenity-card {
-          height: 90%;
           background: rgba(255, 255, 255, 0.1);
           backdrop-filter: blur(10px);
           border: 1px solid rgba(232, 203, 12, 0.31);
-          // border-radius: 0.5rem;
           transition: all 0.3s ease;
         }
 
@@ -214,40 +210,61 @@ export default function AmenitiesSection() {
         }
 
         .amenity-card-content {
-          padding: 1.2rem 1rem;
-          text-align: center;
+          padding: 1rem;
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
         }
 
         .amenity-icon-container {
-          width: 3rem;
-          height: 3rem;
-          // background: rgba(250, 204, 21, 0.2);
-          // border: 1px solid rgba(250, 204, 21, 0.5);
-          border-radius: 50%;
-          color:rgba(250, 204, 21, 0.5);
+          flex-shrink: 0;
+          width: 2.5rem;
+          height: 2.5rem;
+          color: rgba(250, 204, 21, 0.5);
           display: flex;
           align-items: center;
           justify-content: center;
-          margin: 0 auto 0.2rem;
           transition: transform 0.3s ease;
         }
 
         .amenity-card:hover .amenity-icon-container {
           transform: scale(1.1);
-          // background: rgba(250, 204, 21, 0.3);
         }
 
         .amenity-icon {
-          width: 2rem;
-          height: 2rem;
+          width: 1.75rem;
+          height: 1.75rem;
           color: #facc15;
         }
 
         .amenity-name {
-          font-size: 1.125rem;
+          font-size: 1rem;
           font-weight: 600;
           color: #fff;
           margin: 0;
+          line-height: 1.2;
+        }
+
+        /* Adjust grid for better single row layout */
+        @media (max-width: 480px) {
+          .amenity-card-content {
+            padding: 0.75rem;
+            gap: 0.5rem;
+          }
+          
+          .amenity-icon-container {
+            width: 2rem;
+            height: 2rem;
+          }
+          
+          .amenity-icon {
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+          
+          .amenity-name {
+            font-size: 0.9rem;
+          }
         }
 
         /* Featured amenity section */

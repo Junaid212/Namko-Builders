@@ -1,5 +1,20 @@
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import { Waves, Dumbbell, Users, Car, Shield, Zap, Phone, Tv, Baby, Flame, Building } from "lucide-react";
+const amenities = [
+  { icon: Waves, title: "Swimming Pool" },
+  { icon: Dumbbell, title: "Club House & Gym" },
+  { icon: Car, title: "Covered Parking" },
+  { icon: Shield, title: "24/7 Security" },
+  { icon: Zap, title: "Power Backup" },
+  { icon: Phone, title: "Intercom System" },
+  { icon: Tv, title: "Cable TV Ready" },
+  { icon: Baby, title: "Children's Play Area" },
+  { icon: Users, title: "Multipurpose Hall" },
+  { icon: Building, title: "Visitors Lounge" },
+//   { icon: Flame, title: "Gas Connection" },
+//   { icon: Shield, title: "Fire Safety" }
+];
 export default function Home() {
 
     return (
@@ -12,12 +27,17 @@ export default function Home() {
                     <div className="project-details__inner">
                         <div className="project-details-img">
                             <div className="inner">
-                                <img src="assets/img/project/project-details-img1.jpg" alt=""/>
+                                <img src="assets/img/blog/prjct-poster.png" alt=""/>
                             </div>
                         </div>
+                        
 
-                        <div className="project-details__text1">
-                            <ul>
+                        <div className="project-details__text1" >
+                          <video autoPlay loop muted playsInline className="background-video">
+    <source src="./assets/Namko builders.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>  
+                            {/* <ul>
                                 <li>
                                     <div className="text-box">
                                         <p>published:</p>
@@ -49,41 +69,50 @@ export default function Home() {
                                         </li>
                                     </ul>
                                 </li>
-                            </ul>
+                            </ul> */}
+                            <div className="amenities-grid">
+          {amenities.map((amenity, index) => (
+            <div key={index} className="amenity-card">
+              <div className="amenity-card-content">
+                <div className="amenity-icon-container">
+                  <amenity.icon className="amenity-icon" />
+                </div>
+                <h3 className="amenity-name">{amenity.title}</h3>
+              </div>
+            </div>
+          ))}
+        </div>
                         </div>
 
                         <div className="project-details__text2">
-                            <h2>Architecture Solution and Build Future</h2>
-                            <p>With worldwide annual spend on digital advertising surpassing $325 billion, it’s no surprise
-                                that different approaches to online marketing are becoming available. One of these new
-                                approache marketing or digital performance marketing. Keep reading to learn all about
-                                performance marketing, from how it works to how it compares to digital marketing. Plus, get
-                                insight into the benefits and risks of performance marketing and how it can affect your
-                                company’s long-term success and profitability. Performance marketing is an approach to
-                                digital marketing or advertising where businesses only pay when a specific result occurs.
-                                This result could be a new lead, sale, or other outcome agreed upon by the advertiser and
-                                business. Performance marketing involves channels such as affiliate marketing, online </p>
-                            <p>The main thing that separates performance marketing from other types of marketing is the way
-                                businesses pay for their campaigns. Rather than paying up front or by month, advertisers pay
-                                when a specific action takes place. You might enlist a marketing company’s help to bring
-                                your branding to more individuals by having these marketers promote your business to
-                                prospective customers. The hope is that users will complete a form to learn more about your
-                                company and become a lead.</p>
+                            <h2>Ocean View</h2>
+                            <h4>Commercial & Residential</h4>
+                            <p>OCEAN VIEW is special in its orientation and design. Nellikai Road next to a plethora
+                                of Business Addresses captures your imagination to a destination where sun sets in 
+                                the horizon with all its splendor. Be it Taj Manjuran or Milagres church the silhouettes
+                                of Mangalore dramatizes itself in various dimensions into this great pavilion. OCEAN VIEW 
+                                will dramatically alter the woy the fine shopping used to bel With its sprawling high degree
+                                of precision oriented and maximum ambience shopping will usher in all the major brands 
+                                hitherto exclusively held sway in the peripheries of big cities</p>
 
                             <div className="project-details__text2-bottom">
                                 <div className="tag-box">
-                                    <Link href="#">Development</Link>
-                                    <Link href="#">Digital</Link>
-                                    <Link href="#">Tech</Link>
+                                    <Link href="#">DRAWING/DINING</Link>
+                                        <Link href="#">BEDROOMS</Link>
+                                        <Link href="#">KITCHEN AND WORK AREA</Link>
+                                        <Link href="#">BATHROOMS</Link>
+                                        <Link href="#">DOORS</Link>
+                                        <Link href="#">WINDOWS</Link>
+                                        
                                 </div>
 
-                                <div className="icon-box">
+                                {/* <div className="icon-box">
                                     <Link href="#"><span className="icon-share"></span></Link>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
 
-                        <div className="project-details__previous-next">
+                        {/* <div className="project-details__previous-next">
                             <div className="single-box">
                                 <div className="icon-box">
                                     <Link href="#"><span className="icon-left-arrow1"></span></Link>
@@ -92,7 +121,7 @@ export default function Home() {
                                     <p>Previous</p>
                                     <h4><Link href="#">Responsive Design</Link></h4>
                                 </div>
-                            </div>
+                             </div>
 
                             <div className="single-box next">
                                 <div className="text-box text-right">
@@ -103,7 +132,7 @@ export default function Home() {
                                     <Link href="#"><span className="icon-left-arrow"></span></Link>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>
@@ -113,7 +142,7 @@ export default function Home() {
             <section className="project-three project-three--project style4">
                 <div className="container">
                     <div className="sec-title text-center">
-                        <h2>Our Related Products</h2>
+                        <h2>Our Projucts</h2>
                     </div>
                     <div className="row">
                         {/*Start Project Three Single */}
@@ -121,22 +150,22 @@ export default function Home() {
                             <div className="project-three__single">
                                 <div className="project-three__single-inner">
                                     <div className="project-three__single-img"
-                                        style={{backgroundImage: 'url(assets/img/project/project-v3-img4.jpg)'}}>
+                                        style={{backgroundImage: 'url(assets/img/gallery/28.webp)'}}>
                                     </div>
                                     <div className="bg-overlay"></div>
 
-                                    <div className="project-three__overlay-icon">
+                                    {/* <div className="project-three__overlay-icon">
                                         <ul>
                                             <li><Link className="img-popup" href="assets/img/project/project-v3-img4.jpg"><span
                                                         className="icon-search-interface-symbol"></span></Link>
                                             </li>
                                             <li><Link href="#"><span className="icon-link"></span></Link></li>
                                         </ul>
-                                    </div>
+                                    </div> */}
 
                                     <div className="project-three__single-content">
-                                        <p>San Fransisco</p>
-                                        <h2><Link href="#">Hotel Joshna Villa</Link></h2>
+                                        <p>Mangalore</p>
+                                        <h2><Link href="#">Ocean View</Link></h2>
                                     </div>
                                 </div>
                             </div>
@@ -148,22 +177,22 @@ export default function Home() {
                             <div className="project-three__single">
                                 <div className="project-three__single-inner">
                                     <div className="project-three__single-img"
-                                        style={{backgroundImage: 'url(assets/img/project/project-v3-img5.jpg)'}}>
+                                        style={{backgroundImage: 'url(assets/img/gallery/50.webp)'}}>
                                     </div>
                                     <div className="bg-overlay"></div>
 
-                                    <div className="project-three__overlay-icon">
+                                    {/* <div className="project-three__overlay-icon">
                                         <ul>
                                             <li><Link className="img-popup" href="assets/img/project/project-v3-img5.jpg"><span
                                                         className="icon-search-interface-symbol"></span></Link>
                                             </li>
                                             <li><Link href="#"><span className="icon-link"></span></Link></li>
                                         </ul>
-                                    </div>
+                                    </div> */}
 
                                     <div className="project-three__single-content">
-                                        <p>San Fransisco</p>
-                                        <h2><Link href="#">Hotel Joshna Villa</Link></h2>
+                                        <p>Mangalore</p>
+                                        <h2><Link href="/gallery">Ocean View</Link></h2>
                                     </div>
                                 </div>
                             </div>
@@ -175,22 +204,22 @@ export default function Home() {
                             <div className="project-three__single">
                                 <div className="project-three__single-inner">
                                     <div className="project-three__single-img"
-                                        style={{backgroundImage: 'url(assets/img/project/project-v3-img6.jpg)'}}>
+                                        style={{backgroundImage: 'url(assets/img/gallery/3.webp)'}}>
                                     </div>
                                     <div className="bg-overlay"></div>
 
-                                    <div className="project-three__overlay-icon">
+                                    {/* <div className="project-three__overlay-icon">
                                         <ul>
                                             <li><Link className="img-popup" href="assets/img/project/project-v3-img6.jpg"><span
                                                         className="icon-search-interface-symbol"></span></Link>
                                             </li>
                                             <li><Link href="#"><span className="icon-link"></span></Link></li>
                                         </ul>
-                                    </div>
+                                    </div> */}
 
                                     <div className="project-three__single-content">
-                                        <p>San Fransisco</p>
-                                        <h2><Link href="#">Hotel Joshna Villa</Link></h2>
+                                        <p>Mangalore</p>
+                                        <h2><Link href="#">Ocean View</Link></h2>
                                     </div>
                                 </div>
                             </div>
@@ -198,6 +227,129 @@ export default function Home() {
                         {/*End Project Three Single */}
                     </div>
                 </div>
+                <style>{`
+                .project-details__text1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-details__text1 .background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures full coverage */
+  z-index: 0;
+}
+
+.project-details__text1 .amenities-grid {
+  position: relative;
+  z-index: 1; /* keeps amenities above video */
+}
+
+                /* Amenities grid */
+        .amenities-grid {
+          display: grid;
+          gap: 1.5rem;
+          margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 480px) { 
+          .amenities-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+
+        @media (min-width: 768px) {
+          .amenities-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+
+        @media (min-width: 1024px) {
+          .amenities-grid {
+            grid-template-columns: repeat(3, 1fr);
+          }
+        }
+
+        @media (min-width: 1280px) {
+          .amenities-grid {
+            grid-template-columns: repeat(5, 1fr);
+          }
+        }
+
+        /* Amenity card - Updated for single row layout */
+        .amenity-card {
+        //   background: rgba(255, 255, 255, 0.1);
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(245, 245, 245, 0.81);
+          transition: all 0.3s ease;
+        }
+
+        .amenity-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 20px 40px rgba(250, 204, 21, 0.3);
+          border-color: #ffffffff;
+        }
+
+        .amenity-card-content {
+          padding: 1rem;
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+        }
+
+        .amenity-icon-container {
+          flex-shrink: 0;
+          width: 2.5rem;
+          height: 2.5rem;
+          color: rgba(250, 204, 21, 0.5);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: transform 0.3s ease;
+        }
+
+        .amenity-card:hover .amenity-icon-container {
+          transform: scale(1.1);
+        }
+
+        .amenity-icon {
+          width: 1.75rem;
+          height: 1.75rem;
+          color: rgba(250, 204, 21, 1);
+        }
+
+        .amenity-name {
+          font-size: 1rem;
+          font-weight: 600;
+          color: #fff;
+          margin: 0;
+          line-height: 1.2;
+        }
+
+        /* Adjust grid for better single row layout */
+        @media (max-width: 480px) {
+          .amenity-card-content {
+            padding: 0.75rem;
+            gap: 0.5rem;
+          }
+          
+          .amenity-icon-container {
+            width: 2rem;
+            height: 2rem;
+          }
+          
+          .amenity-icon {
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+          
+          .amenity-name {
+            font-size: 0.9rem;
+          }
+        }`}</style>
             </section>
             {/*End Project Three */}
             </Layout>

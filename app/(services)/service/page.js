@@ -4,6 +4,7 @@ import BrandSlider2 from '@/components/slider/BrandSlider2'
 import Link from "next/link"
 import { useState } from 'react'
 import CounterUp from "@/components/elements/CounterUp"
+import Action from "@/components/sections/home2/Action"
 export default function Home() {
    
 
@@ -377,7 +378,7 @@ export default function Home() {
                 {/*End Service One */}
 
                {/*Start Call To Action One */}
-                <section className="call-to-action-one">
+                {/* <section className="call-to-action-one">
                     <div className="call-to-action-one__bg"
                         style={{backgroundImage: 'url(assets/img/background/banner-hmdown.png)'}}></div>
                     <div className="container">
@@ -393,7 +394,8 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
+                <Action/>
                 {/*End Call To Action One */}
 
                 </div>
