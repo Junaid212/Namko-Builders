@@ -114,7 +114,7 @@ export default function Menu() {
                                                 <li><Link href="/checkout">Checkout</Link></li>
                                             </ul>
                                         </li> */}
-                                        <li className="menu-item-has-children"><Link href="/project-details">Projects</Link>
+                                        <li className="menu-item-has-children"><Link href="/blog-details">Projects</Link>
                                         
                                             {/* <ul className="sub-menu">
                                                 <li><Link href="/blog">Blog</Link></li>

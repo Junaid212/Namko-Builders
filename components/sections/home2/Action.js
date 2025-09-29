@@ -15,7 +15,7 @@ export default function Action() {
             playsInline
             className="video-desktop"
           >
-            <source src="assets/v-banner.mp4" type="video/mp4" />
+            <source src="./assets/v-banner.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
 
@@ -27,17 +27,17 @@ export default function Action() {
             playsInline
             className="video-mobile"
           >
-            <source src="assets/mv-banner.mp4" type="video/mp4" />
+            <source src="./assets/mv-banner.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
 
         {/* Content */}
         <div className="container">
-          <div className="call-to-action-one__inner text-center">
+          <div className="call-to-action-one__inner">
             <div className="call-to-action-one__content">
-              <h2>Make Your Dream Home a Reality</h2>
-              <h3>Don’t Hesitate to Say Hello</h3>
+              <h2>Make Your Dream<br/> Home a Reality</h2>
+              <h3>Don't Hesitate to Say Hello</h3>
               <div className="btn-box">
                 <a className="thm-btn" href="#">
                   <span className="txt">Enquire Now</span>
@@ -47,26 +47,37 @@ export default function Action() {
           </div>
         </div>
         <style>{`
-        .video-desktop {
-  display: block;
-  width: 100%;
-}
+          .call-to-action-one__inner {
+            text-align: left;
+          }
+          
+          .call-to-action-one__content {
+            text-align: left;
+          }
+          
+          .btn-box {
+            text-align: left;
+          }
 
-.video-mobile {
-  display: none;
-  width: 100%;
-}
+          .video-desktop {
+            display: block;
+            width: 100%;
+          }
 
-@media (max-width: 768px) {
-  .video-desktop {
-    display: none;
-  }
-  .video-mobile {
-    display: block;
-    padding-bottom:-150px;
-  }
-}
+          .video-mobile {
+            display: none;
+            width: 100%;
+          }
 
+          @media (max-width: 768px) {
+            .video-desktop {
+              display: none;
+            }
+            .video-mobile {
+              display: block;
+              padding-bottom: -150px;
+            }
+          }
         `}</style>
       </section>
       {/*End Call To Action One */}

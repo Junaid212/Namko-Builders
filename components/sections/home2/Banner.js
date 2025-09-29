@@ -64,19 +64,36 @@ export default function Banner() {
 
     return (
         <>
-            <section className="main-slider main-slider-two">
+            <section className="main-slider main-slider-two" >
                 <Swiper {...swiperOptions} className="swiper-wrapper">
                     {/* Start Swiper Slide Single*/}
                     <SwiperSlide className="swiper-slide">
                         {/* Use vertical image for mobile, horizontal for desktop */}
-                        <div 
-                            className="image-layer" 
-                            style={{
-                                backgroundImage: isMobile 
-                                    ? 'url(assets/img/slider/mob-banner.jpg)' 
-                                    : 'url(assets/img/background/banner-main.png)'
-                            }}
-                        ></div>
+                        <div className="call-to-action-one__bg">
+          {/* Desktop Video */}
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="video-desktop"
+          >
+            <source src="./assets/v-banner.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          {/* Mobile Video */}
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="video-mobile"
+          >
+            <source src="./assets/mv-banner.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
                         <div className="main-slider-two__pattern"
                             style={{backgroundImage: 'url(assets/img/pattern/main-slider-v2-pattern.png)'}}></div>
 
@@ -94,7 +111,7 @@ export default function Banner() {
                                         <h2>NAMKO</h2>
                                     </div>
                                     <h2>Homes Designed <br/>
-                                        for the Way You Live</h2>
+                                        for the Way You<br/> Live</h2>
                                     <div className="btn-box">
                                         <div className="btn-one">
                                             <Link className="thm-btn" href="/contact">
@@ -143,7 +160,7 @@ export default function Banner() {
                                         <h2>NAMKO</h2>
                                     </div>
                                     <h2>Homes Designed <br/>
-                                        for the Way You Live</h2>
+                                        for the Way You <br/>Live</h2>
                                     <div className="btn-box">
                                         <div className="btn-one">
                                             <Link className="thm-btn" href="/contact">

@@ -25,9 +25,9 @@ export default function Home() {
                 {/* <Features /> */}
                 
                 <About />
-                <RunningText/>
+                {/* <RunningText/> */}
                 {/* <StatsSection/> */}
-                <StatsPage/>
+                {/* <StatsPage/> */}
                 <FloorPlansSection/>
 
                 <Services />

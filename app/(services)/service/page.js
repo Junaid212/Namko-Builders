@@ -5,6 +5,8 @@ import Link from "next/link"
 import { useState } from 'react'
 import CounterUp from "@/components/elements/CounterUp"
 import Action from "@/components/sections/home2/Action"
+import RunningText from "@/components/sections/home3/RunningText"
+import { Waves } from "lucide-react"
 export default function Home() {
    
 
@@ -13,112 +15,7 @@ export default function Home() {
             <Layout headerStyle={4} footerStyle={1} breadcrumbTitle="Service Page">
                 <div>
                      {/*Start About Three */}
-            <section className="about-three">
-                <div className="container">
-                    <div className="row">
-                        {/*Start About Three Img */}
-                        <div className="col-xl-6">
-                            <div className="about-three__img">
-                                <div className="about-three__img1">
-                                    <div className="inner">
-                                        <img src="assets/img/about/s1.png" alt=""/>
-                                    </div>
-
-                                    <div className="experience-box">
-                                        <div className="counter-box">
-                                            <h2 className="count"><CounterUp end={14} />
-                                            </h2>
-                                        </div>
-                                        <div className="text-box">
-                                            <p>YEARS <br/>
-                                                WORKIGN <br/>
-                                                EXPERIENCE</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="about-three__img2">
-                                    <ul>
-                                        <li>
-                                            <div className="about-three__img2-single">
-                                                <img src="assets/img/about/s2.png" alt=""/>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <div className="about-three__img2-single">
-                                                <img src="assets/img/about/s3.png" alt=""/>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        {/*End About Three Img */}
-
-                        {/*Start About One Content */}
-                        <div className="col-xl-6">
-                            <div className="about-one__content">
-                                <div className="sec-title">
-                                    <h2>Homes That Inspire</h2>
-                                </div>
-
-                                <div className="text-box">
-                                    <p>From smart floor plans to premium finishes, we focus on the details that make everyday living truly exceptional.
-                                         Every space is thoughtfully designed to bring comfort, style, and harmony to your home.</p>
-                                </div>
-
-                                <div className="about-one__content-progress">
-                                    <div className="about-one__content-progress-single">
-                                        <div className="title">
-                                            <h4>Design</h4>
-                                        </div>
-                                        <div className="bar">
-                                            <div className="bar-inner1 count-bar" data-percent="80%">
-                                                <div className="count-text">80%</div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="about-one__content-progress-single mb0">
-                                        <div className="title">
-                                            <h4>Architect</h4>
-                                        </div>
-                                        <div className="bar">
-                                            <div className="bar-inner2 count-bar" data-percent="90%">
-                                                <div className="count-text style2">90%</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="about-one__content-bottom">
-                                    <div className="about-one__content-bottom-author-box">
-                                        <div className="btn-box">
-                                            <Link className="thm-btn" href="/about">
-                                                <span className="txt">Discover More</span>
-                                            </Link>
-                                        </div>
-
-                                        {/* <div className="author-info">
-                                            <div className="img-box">
-                                                <img src="assets/img/about/about-v1-img2.jpg" alt=""/>
-                                            </div>
-                                            <div className="signature-box">
-                                                <img src="assets/img/about/signature-1.png" alt=""/>
-                                            </div>
-                                        </div> */}
-                                    </div>
-                                    <div className="text">
-                                        <h4>Do you have any project on your mind? Call Us: <a href="tel:123456789">+91 81979 82888</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {/*End About One Content */}
-                    </div>
-                </div>
-            </section>
+            
             {/*End About Three */}
                 {/*Start Service Two */}
                 <section className="service-two">
@@ -191,7 +88,197 @@ export default function Home() {
                 </section>
                 {/*End Service Two */}
 
+                <div className="why-choose-us-one">
+                                    <div className="container">
+                                        <div className="row">
+                                            {/*Start Why Choose Us One Img */}
+                                            <div className="col-xl-6 wow animated fadeInRight" data-wow-delay="0.1s">
+                                                <div className="why-choose-us-one__img">
+                                                    <div className="shape1"><img src="assets/img/shape/nmko.png" alt=""/></div>
+                                                    <ul>
+                                                        <li>
+                                                            <div className="img-box">
+                                                                <img src="assets/img/shape/1.png" alt=""/>
+                                                            </div>
+                                                        </li>
                 
+                                                        <li>
+                                                            <div className="img-box">
+                                                                <img src="assets/img/shape/2.png" alt=""/>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            {/*End Why Choose Us One Img */}
+                                            
+                
+                                            {/*Start Why Choose Us Content */}
+                                            <div className="col-xl-6 wow animated fadeInLeft" data-wow-delay="0.1s">
+                                                <div className="why-choose-us-one__content">
+                                                    <ul>
+                                                        <li>
+                                                            <div className="inner">
+                                                                <div className="icon-box">
+                                                                    <span className="icon-office-building"></span>
+                                                                </div>
+                                                                <div className="content-box">
+                                                                    <h2 >Commitment to Quality</h2>
+                                                                    <p>Delivering homes built with precision, care, and lasting value. </p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                
+                                                        <li>
+                                                            <div className="inner">
+                                                                <div className="icon-box">
+                                                                    <span className="icon-bed"></span>
+                                                                </div>
+                                                                <div className="content-box">
+                                                                    <h2>Customer-Centric Approach</h2>
+                                                                    <p>Every decision is made keeping your comfort and lifestyle in mind. </p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                
+                                                        <li>
+                                                            <div className="inner">
+                                                                <div className="icon-box">
+                                                                    <span className="icon-targeted"></span>
+                                                                </div>
+                                                                <div className="content-box">
+                                                                    <h2>Innovation in Design</h2>
+                                                                    <p>Modern layouts and thoughtful details for contemporary living.</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <style>{`
+                                                .content-box h2{
+                                                color: white;
+                                                }
+                                                `}</style>
+                                            </div>
+                                            {/*End Why Choose Us Content */}
+                                        </div>
+                                    </div>
+                                </div>
+                                <RunningText/>
+                                <div className="center-wrapper">
+                                <div className="featured-amenity">
+          <div className="featured-amenity-content">
+            <div className="featured-amenity-icon-container">
+              <div className="featured-amenity-icon-wrapper">
+                <Waves className="featured-amenity-icon" />
+              </div>
+            </div>
+            <h3 className="featured-amenity-title">
+              Resort-Style Swimming Pool
+            </h3>
+            <p className="featured-amenity-description">
+              Dive into luxury with our king-size swimming pool featuring a dedicated toddler pool, 
+              perfect for the whole family to enjoy year-round.
+            </p>
+            <div className="featured-amenity-tags">
+              <div className="featured-amenity-tag">King Size Pool</div>
+              <div className="featured-amenity-tag">Toddler Pool</div>
+              <div className="featured-amenity-tag">Terrace Location</div>
+              <div className="featured-amenity-tag">Professional Maintenance</div>
+            </div>
+          </div>
+          <style>{`
+          /* Featured amenity section */
+        .featured-amenity {
+          width: 80%;
+          background: #F1B231;
+          border-radius: 0.5rem;
+          padding: 2rem;
+          color: #000;
+          text-align: center;
+          backdrop-filter: blur(10px);
+          margin: 0 auto; 
+        }
+          .center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh; /* full screen height */
+}
+
+
+        @media (min-width: 768px) {
+          .featured-amenity {
+            padding: 3rem;
+          }
+        }
+
+        .featured-amenity-content {
+          max-width: 64rem;
+          margin: 0 auto;
+        }
+
+        .featured-amenity-icon-container {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 1.5rem;
+        }
+
+        .featured-amenity-icon-wrapper {
+          width: 5rem;
+          height: 5rem;
+          background: rgba(0, 0, 0, 0.2);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .featured-amenity-icon {
+          width: 2.5rem;
+          height: 2.5rem;
+          color: #000;
+        }
+
+        .featured-amenity-title {
+          font-size: 1.875rem;
+          font-weight: 700;
+          margin-bottom: 1rem;
+        }
+
+        @media (min-width: 768px) {
+          .featured-amenity-title {
+            font-size: 2.25rem;
+          }
+        }
+
+        .featured-amenity-description {
+          font-size: 1.25rem;
+          color: rgba(0, 0, 0, 0.8);
+          margin-bottom: 2rem;
+          max-width: 42rem;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .featured-amenity-tags {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 1rem;
+          font-size: 0.875rem;
+          font-weight: 500;
+        }
+
+        .featured-amenity-tag {
+          background: rgba(0, 0, 0, 0.2);
+          padding: 0.5rem 1rem;
+          border-radius: 9999px;
+          color: white;
+        }
+          `}</style>
+        </div>
+        </div>
 
                 {/*Start Brand Two */}
                 {/* <div className="brand-one brand-one--two about">

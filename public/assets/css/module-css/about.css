@@ -472,10 +472,11 @@
     display: block;
     max-width: 290px;
     width: 100%;
-    background: #c5bd9a;
+    background: none;
+    
     padding: 8px 20px 7px;
     margin-bottom: 15px;
-    border-radius: 5px;
+    border-radius: 5px ;
 }
 
 .about-two__content-list ul li:last-child {
@@ -483,7 +484,7 @@
 }
 
 .about-two__content-list ul li p {
-    color: var(--thm-black);
+    color: var(--thm-white);
     font-size: 18px;
     line-height: 28px;
     font-weight: 500;

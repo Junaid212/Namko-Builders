@@ -1,6 +1,7 @@
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import { Waves, Dumbbell, Users, Car, Shield, Zap, Phone, Tv, Baby, Flame, Building } from "lucide-react";
+import AmenitiesSection from "@/components/sections/home2/AmenitiesSection";
 const amenities = [
   { icon: Waves, title: "Swimming Pool" },
   { icon: Dumbbell, title: "Club House & Gym" },
@@ -32,12 +33,7 @@ export default function Home() {
                         </div>
                         
 
-                        <div className="project-details__text1" >
-                          <video autoPlay loop muted playsInline className="background-video">
-    <source src="./assets/Namko builders.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>  
-                            {/* <ul>
+                                       {/* <ul>
                                 <li>
                                     <div className="text-box">
                                         <p>published:</p>
@@ -70,19 +66,8 @@ export default function Home() {
                                     </ul>
                                 </li>
                             </ul> */}
-                            <div className="amenities-grid">
-          {amenities.map((amenity, index) => (
-            <div key={index} className="amenity-card">
-              <div className="amenity-card-content">
-                <div className="amenity-icon-container">
-                  <amenity.icon className="amenity-icon" />
-                </div>
-                <h3 className="amenity-name">{amenity.title}</h3>
-              </div>
-            </div>
-          ))}
-        </div>
-                        </div>
+                            
+                        
 
                         <div className="project-details__text2">
                             <h2>Ocean View</h2>
@@ -96,7 +81,7 @@ export default function Home() {
                                 hitherto exclusively held sway in the peripheries of big cities</p>
 
                             <div className="project-details__text2-bottom">
-                                <div className="tag-box">
+                                {/* <div className="tag-box">
                                     <Link href="#">DRAWING/DINING</Link>
                                         <Link href="#">BEDROOMS</Link>
                                         <Link href="#">KITCHEN AND WORK AREA</Link>
@@ -104,7 +89,7 @@ export default function Home() {
                                         <Link href="#">DOORS</Link>
                                         <Link href="#">WINDOWS</Link>
                                         
-                                </div>
+                                </div> */}
 
                                 {/* <div className="icon-box">
                                     <Link href="#"><span className="icon-share"></span></Link>
@@ -137,12 +122,13 @@ export default function Home() {
                 </div>
             </section>
             {/*End Project Details */}
+            <AmenitiesSection/>
 
             {/*Start Project Three */}
             <section className="project-three project-three--project style4">
                 <div className="container">
                     <div className="sec-title text-center">
-                        <h2>Our Projucts</h2>
+                        <h2>Our Projects</h2>
                     </div>
                     <div className="row">
                         {/*Start Project Three Single */}

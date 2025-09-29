@@ -10,7 +10,7 @@ const floorPlans = [
   {
     id: "2bhk-b",
     type: "2 BHK",
-    name: "Type B",
+    name: "Type B1",
     area: "1420",
     price: "₹45-50 Lakhs",
     features: ["2 Bedrooms", "2 Bathrooms", "Living/Dining", "Kitchen", "Balcony"],
@@ -20,12 +20,12 @@ const floorPlans = [
   {
     id: "3bhk-b1",
     type: "3 BHK",
-    name: "Type B1",
+    name: "Type B",
     area: "1430",
     price: "₹46-51 Lakhs",
     features: ["2 Bedrooms", "2 Bathrooms", "Living/Dining", "Kitchen", "Balcony"],
     image: "assets/img/gallery/8.webp",
-    description: "Enhanced 2-bedroom layout with optimized space utilization"
+    description: "Enhanced 3-bedroom layout with optimized space utilization"
   },
   {
     id: "4bhk-a",
@@ -33,9 +33,9 @@ const floorPlans = [
     name: "Type A",
     area: "1950-1985",
     price: "₹65-75 Lakhs",
-    features: ["3 Bedrooms", "3 Bathrooms", "Living/Dining", "Kitchen", "2 Balconies"],
+    features: ["4 Bedrooms", "4 Bathrooms", "Living/Dining", "Kitchen", "2 Balconies"],
     image: "assets/img/gallery/6.webp",
-    description: "Spacious 3-bedroom apartment with premium features and dual balconies"
+    description: "Spacious 4-bedroom apartment with premium features and dual balconies"
   },
   // {
   //   id: "3bhk-c",
@@ -91,6 +91,16 @@ export default function FloorPlansSection() {
               viewport={{ once: true }}
             >
               <div className="plan-card" onClick={() => setSelectedPlan(plan)}>
+                {/* <div className="plan-image-container">
+                  <img
+                    src={plan.image}
+                    alt={`${plan.type} ${plan.name}`}
+                    className="plan-image"
+                  />
+                  <div className="plan-badge">
+                    {plan.type}
+                  </div>
+                </div> */}
                 <div className="plan-image-container">
                   <img
                     src={plan.image}
@@ -100,18 +110,6 @@ export default function FloorPlansSection() {
                   <div className="plan-badge">
                     {plan.type}
                   </div>
-                  {/* <div className="plan-overlay">
-                    <button
-                      variant="secondary"
-                      className="view-details-btn"
-                    >
-                      <Eye className="w-4 h-4 mr-2" />
-                      View Details
-                    </button>
-                  </div> */}
-                </div>
-
-                <div className="plan-content">
                   <div className="plan-header">
                     <h3 className="plan-name">{plan.name}</h3>
                     <div className="plan-area">
@@ -119,6 +117,11 @@ export default function FloorPlansSection() {
                       {plan.area} sq ft
                     </div>
                   </div>
+                </div>
+
+                <div className="plan-content">
+                  
+                  
 
                   <p className="plan-description">{plan.description}</p>
 
@@ -278,9 +281,12 @@ export default function FloorPlansSection() {
 
 .plan-image {
   width: 100%;
-  height: 12rem;
+  height: 14rem;
   object-fit: cover;
   transition: transform 0.3s ease;
+  background-color: white;
+  padding:5px 5px 5px 5px;
+  margin-bottom: 20px;
 }
 
 .plan-card:hover .plan-image {
@@ -348,12 +354,18 @@ export default function FloorPlansSection() {
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 0.75rem;
+  background-color: white;
+  padding: 8px 15px 15px 10px;
+  margin-top:-20px;
+  margin-bottom: -10px;
 }
 
 .plan-name {
   font-size: 1.25rem;
   font-weight: 700;
-  color: white;
+  color: black;
+  z-index: 1;
+  
 }
 
 .plan-area {
@@ -362,6 +374,7 @@ export default function FloorPlansSection() {
   color: #fbbf24;
   font-weight: 600;
   text-align: right;
+  z-index: 1;
 }
 
 .plan-description {

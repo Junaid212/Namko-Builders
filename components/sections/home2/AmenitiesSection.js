@@ -23,7 +23,7 @@ export default function AmenitiesSection() {
       {/* Video Background with Overlay */}
       <div className="video-background">
         <video autoPlay loop muted playsInline className="background-video">
-          <source src="assets/Namko builders.mp4" type="video/mp4" />
+          <source src="./assets/Namko builders.mp4" type="video/mp4" />
           {/* Fallback image if video doesn't load */}
         </video>
         <div className="video-overlay"></div>
@@ -54,7 +54,7 @@ export default function AmenitiesSection() {
         </div>
 
         {/* Featured Amenity Highlight */}
-        <div className="featured-amenity">
+        {/* <div className="featured-amenity">
           <div className="featured-amenity-content">
             <div className="featured-amenity-icon-container">
               <div className="featured-amenity-icon-wrapper">
@@ -75,7 +75,7 @@ export default function AmenitiesSection() {
               <div className="featured-amenity-tag">Professional Maintenance</div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       
       <style jsx>{`
