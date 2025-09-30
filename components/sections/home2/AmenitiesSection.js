@@ -23,7 +23,7 @@ export default function AmenitiesSection() {
       {/* Video Background with Overlay */}
       <div className="video-background">
         <video autoPlay loop muted playsInline className="background-video">
-          <source src="./assets/Namko builders.mp4" type="video/mp4" />
+          <source src="/Namko builders.mp4" type="video/mp4" />
           {/* Fallback image if video doesn't load */}
         </video>
         <div className="video-overlay"></div>
