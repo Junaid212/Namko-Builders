@@ -219,7 +219,7 @@ export default function About() {
                     }}
                 >
                     {/* Replace with your uploaded video path */}
-                    <source src="assets/Namko builders.mp4" type="video/mp4" />
+                    <source src="/Namko builders.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
             </div>
