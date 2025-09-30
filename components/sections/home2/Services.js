@@ -22,9 +22,9 @@ export default function Services() {
                     {/*Start Service Two Single */}
                     <div className="col-xl-4 col-lg-4 wow animated fadeInUp" data-wow-delay="0.1s">
                         <div className="service-two__single">
-                            <div className="shape2"><img src="assets/img/shape/service-v2-shape2.png" alt=""/></div>
+                            <div className="shape2"><img src="assets/img/shape/ylw.png" alt=""/></div>
                             <div className="service-two__single-bg"
-                                style={{backgroundImage: 'url(assets/img/service/service-v2-single-bg.jpg)'}}></div>
+                                style={{backgroundImage: 'url(assets/img/gallery/4.webp)'}}></div>
                             <div className="service-two__single-icon">
                                 <span className="icon-construction-machine"></span>
                             </div>
@@ -43,9 +43,9 @@ export default function Services() {
                     {/*Start Service Two Single */}
                     <div className="col-xl-4 col-lg-4 wow animated fadeInUp" data-wow-delay="0.3s">
                         <div className="service-two__single">
-                            <div className="shape2"><img src="assets/img/shape/service-v2-shape2.png" alt=""/></div>
+                            <div className="shape2"><img src="assets/img/shape/ylw.png" alt=""/></div>
                             <div className="service-two__single-bg"
-                                style={{backgroundImage: 'url(assets/img/service/service-v2-single-bg.jpg)'}}></div>
+                                style={{backgroundImage: 'url(assets/img/gallery/7.webp)'}}></div>
                             <div className="service-two__single-icon">
                                 <span className="icon-construction"></span>
                             </div>
@@ -64,9 +64,9 @@ export default function Services() {
                     {/*Start Service Two Single */}
                     <div className="col-xl-4 col-lg-4 wow animated fadeInUp" data-wow-delay="0.5s">
                         <div className="service-two__single">
-                            <div className="shape2"><img src="assets/img/shape/service-v2-shape2.png" alt=""/></div>
+                            <div className="shape2"><img src="assets/img/shape/ylw.png" alt=""/></div>
                             <div className="service-two__single-bg"
-                                style={{backgroundImage: 'url(assets/img/service/service-v2-single-bg.jpg)'}}></div>
+                                style={{backgroundImage: 'url(assets/img/gallery/1.webp)'}}></div>
                             <div className="service-two__single-icon">
                                 <span className="icon-interior-design"></span>
                             </div>

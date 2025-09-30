@@ -73,7 +73,7 @@ export default function Home() {
                             <div className="about-three__img">
                                 <div className="about-three__img1" >
                                     <div className="inner" >
-                                        <img src="assets/img/about/s1.png" alt=""/>
+                                        <img src="assets/img/about/60.png" alt=""/>
                                     </div>
 
                                     <div className="experience-box">
@@ -93,13 +93,13 @@ export default function Home() {
                                     <ul>
                                         <li>
                                             <div className="about-three__img2-single">
-                                                <img src="assets/img/about/s2.png" alt=""/>
+                                                <img src="assets/img/about/61.png" alt=""/>
                                             </div>
                                         </li>
 
                                         <li>
                                             <div className="about-three__img2-single">
-                                                <img src="assets/img/about/s3.png" alt=""/>
+                                                <img src="assets/img/about/62.png" alt=""/>
                                             </div>
                                         </li>
                                     </ul>

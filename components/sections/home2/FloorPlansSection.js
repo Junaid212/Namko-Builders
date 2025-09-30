@@ -1,10 +1,7 @@
 'use client'
 import React, { useState } from "react";
-// import { motion } from "framer-motion";
-// import { Card, CardContent } from "@/components/ui/card";
-// import { Badge } from "@/components/ui/badge";
-// import { Button } from "@/components/ui/button";
 import { Home, Square, Bed, Bath, Users, Eye } from "lucide-react";
+import Link from "next/link";
 
 const floorPlans = [
   {
@@ -14,7 +11,7 @@ const floorPlans = [
     area: "1420",
     price: "₹45-50 Lakhs",
     features: ["2 Bedrooms", "2 Bathrooms", "Living/Dining", "Kitchen", "Balcony"],
-    image: "assets/img/gallery/3.webp",
+    image: "assets/img/gallery/48.webp",
     description: "Compact yet spacious 2-bedroom apartment perfect for small families"
   },
   {
@@ -24,7 +21,7 @@ const floorPlans = [
     area: "1430",
     price: "₹46-51 Lakhs",
     features: ["2 Bedrooms", "2 Bathrooms", "Living/Dining", "Kitchen", "Balcony"],
-    image: "assets/img/gallery/8.webp",
+    image: "assets/img/gallery/50.webp",
     description: "Enhanced 3-bedroom layout with optimized space utilization"
   },
   {
@@ -37,26 +34,6 @@ const floorPlans = [
     image: "assets/img/gallery/6.webp",
     description: "Spacious 4-bedroom apartment with premium features and dual balconies"
   },
-  // {
-  //   id: "3bhk-c",
-  //   type: "3 BHK",
-  //   name: "Type C",
-  //   area: "1670-1745",
-  //   price: "₹58-68 Lakhs",
-  //   features: ["3 Bedrooms", "2 Bathrooms", "Living/Dining", "Kitchen", "Balcony"],
-  //   image: "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&h=400&fit=crop&auto=format",
-  //   description: "Well-designed 3-bedroom unit with efficient layout and modern amenities"
-  // },
-  // {
-  //   id: "duplex",
-  //   type: "Duplex",
-  //   name: "Type D, E, F",
-  //   area: "2470-3510",
-  //   price: "₹85 Lakhs - 1.2 Cr",
-  //   features: ["4-5 Bedrooms", "4-5 Bathrooms", "2 Levels", "Multiple Balconies", "Premium"],
-  //   image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=400&fit=crop&auto=format",
-  //   description: "Luxurious duplex apartments with expansive living spaces across two floors"
-  // }
 ];
 
 export default function FloorPlansSection() {
@@ -91,16 +68,7 @@ export default function FloorPlansSection() {
               viewport={{ once: true }}
             >
               <div className="plan-card" onClick={() => setSelectedPlan(plan)}>
-                {/* <div className="plan-image-container">
-                  <img
-                    src={plan.image}
-                    alt={`${plan.type} ${plan.name}`}
-                    className="plan-image"
-                  />
-                  <div className="plan-badge">
-                    {plan.type}
-                  </div>
-                </div> */}
+                
                 <div className="plan-image-container">
                   <img
                     src={plan.image}
@@ -137,10 +105,15 @@ export default function FloorPlansSection() {
                   </div>
 
                   <div className="plan-footer">
-                    {/* <div className="plan-price">{plan.price}</div> */}
-                    <button variant="outline" size="sm" className="learn-more-btn">
-                      Learn More
-                    </button>
+                   <Link href="/blog-details">
+      <button
+        variant="outline"
+        size="sm"
+        className="learn-more-btn"
+      >
+        Learn More
+      </button>
+    </Link>
                   </div>
                 </div>
               </div>
