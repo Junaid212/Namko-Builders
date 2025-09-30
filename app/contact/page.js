@@ -419,7 +419,8 @@ export default function ContactPage() {
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 0.5rem;
-  padding: 2.5rem;
+  padding: 2.5rem ;
+  padding-bottom: 3.5 rem;
   width: 100%;
   max-width: 500px;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
@@ -482,14 +483,14 @@ export default function ContactPage() {
 .formDescription {
   color: #d1d5db;
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.4;
   opacity: 0.9;
 }
 
 .formFields {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.5rem;
   position: relative;
   z-index: 2;
 }
@@ -535,7 +536,7 @@ export default function ContactPage() {
 
 .formButton {
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   background: linear-gradient(135deg, #f0be08, #fbbf24);
   color: #1f2937;
   padding: 1rem 2rem;

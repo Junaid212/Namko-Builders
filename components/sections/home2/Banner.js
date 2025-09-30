@@ -78,7 +78,7 @@ export default function Banner() {
             playsInline
             className="video-desktop"
           >
-            <source src="./assets/v-banner.mp4" type="video/mp4" />
+            <source src="/v-banner.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
 
@@ -90,7 +90,7 @@ export default function Banner() {
             playsInline
             className="video-mobile"
           >
-            <source src="./assets/mv-banner.mp4" type="video/mp4" />
+            <source src="/mv-banner.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -228,7 +228,7 @@ export default function Banner() {
                             }}
                         >
                             {/* Replace with your uploaded video path */}
-                            <source src="assets/Namko builders.mp4" type="video/mp4" />
+                            <source src="/Namko builders.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                     </div>
