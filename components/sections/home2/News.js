@@ -23,7 +23,7 @@ export default function News() {
                                 <div className="inner">
                                     <img src="assets/img/gallery/1.webp" alt=""/>
                                     <div className="overlay-icon">
-                                        <Link href="#"><span className="icon-plus"></span></Link>
+                                        <Link href="/gallery"><span className="icon-plus"></span></Link>
                                     </div>
                                 </div>
                             </div>
@@ -36,7 +36,7 @@ export default function News() {
                                         <p>02 July, 2023</p>
                                     </li>
                                 </ul> */}
-                                <h2><Link href="/blog-details">Tips for Choosing Your Dream Home  </Link></h2>
+                                <h2><Link href="/gallery">Tips for Choosing Your Dream Home  </Link></h2>
                                 <div className="btn-box">
                                     {/* <Link href="/blog-details">READ MORE <span className="icon-left-arrow"></span></Link> */}
                                 </div>
@@ -52,7 +52,7 @@ export default function News() {
                                 <div className="inner">
                                     <img src="assets/img/gallery/10.webp" alt=""/>
                                     <div className="overlay-icon">
-                                        <Link href="#"><span className="icon-plus"></span></Link>
+                                        <Link href="/gallery"><span className="icon-plus"></span></Link>
                                     </div>
                                 </div>
                             </div>
@@ -65,7 +65,7 @@ export default function News() {
                                         <p>02 July, 2023</p>
                                     </li>
                                 </ul> */}
-                                <h2><Link href="/blog-details">Maximizing Small Spaces <br/>
+                                <h2><Link href="/gallery">Maximizing Small Spaces <br/>
                                         </Link></h2>
                                 <div className="btn-box">
                                     {/* <Link href="/blog-details">READ MORE <span className="icon-left-arrow"></span></Link> */}
@@ -82,7 +82,7 @@ export default function News() {
                                 <div className="inner">
                                     <img src="assets/img/gallery/46.webp" alt=""/>
                                     <div className="overlay-icon">
-                                        <Link href="#"><span className="icon-plus"></span></Link>
+                                        <Link href="/gallery"><span className="icon-plus"></span></Link>
                                     </div>
                                 </div>
                             </div>
@@ -95,7 +95,7 @@ export default function News() {
                                         <p>02 July, 2023</p>
                                     </li>
                                 </ul> */}
-                                <h2><Link href="/blog-details">Benefits of Modern Floor Plans <br/>
+                                <h2><Link href="/gallery">Benefits of Modern Floor Plans <br/>
                                          </Link></h2>
                                 <div className="btn-box">
                                     {/* <Link href="/blog-details">READ MORE <span className="icon-left-arrow"></span></Link> */}

@@ -94,6 +94,15 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
                             </li>
                             <li className="menu-item-has-children"><Link href="/gallery" onClick={handleMobileMenu}>Gallery</Link></li>
                             <li><Link href="/contact" onClick={handleMobileMenu}>Contact</Link></li>
+                            <li>
+                    <a 
+                        href="/Ocean-View- Brochure.pdf" 
+                        className="download-btn theme-btn"
+                        download
+                    >
+                        <span>Download Brochure</span>
+                    </a>
+                </li>
                         </ul>
                         {/*Here Menu Will Come Automatically Via Javascript / Same Menu as in Header */}
                     </div>
@@ -114,6 +123,25 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
                         </ul>
                     </div>
                 </nav>
+                <style jsx>{`
+                .download-btn span{
+                    display: inline-block;
+                    background: #E5A53B;
+                    color: white;
+                    padding: 5px 5px;
+                    border-radius: 5px;
+                    text-decoration: none;
+                    font-weight: bold;
+                    transition: background 0.3s ease;
+                    margin-left: 10px;
+                }
+
+                .download-btn span:hover {
+                    background: #f5ac35ff;
+                    padding: 5px 5px;
+                    border-radius: 5px;
+                }
+            `}</style>
             </div>
             <div className="menu-backdrop" onClick={handleMobileMenu}></div>
             {/*End Mobile Menu */}
