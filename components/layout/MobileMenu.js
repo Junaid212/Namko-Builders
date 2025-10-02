@@ -124,9 +124,9 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
                     </div>
                     <div className="social-links">
                         <ul className="clearfix list-wrap">
-                            {/* <li><Link href="#"><i className="fab fa-facebook-f"></i></Link></li>
-                            <li><Link href="#"><i className="fab fa-twitter"></i></Link></li> */}
-                            <li><Link href="https://www.instagram.com/namkobuilders1" onClick={handleMobileMenu}><i className="fab fa-instagram"></i></Link></li>
+                            <li><Link href="https://www.facebook.com/namkooceanviwe2016/" target="blank"><i className="fab fa-facebook-f"></i></Link></li>
+                            {/* <li><Link href="#"><i className="fab fa-twitter"></i></Link></li> */}
+                            <li><Link href="https://www.instagram.com/namkobuilders1" onClick={handleMobileMenu} target="blank"><i className="fab fa-instagram"></i></Link></li>
                             {/* <li><Link href="#"><i className="fab fa-linkedin-in"></i></Link></li>
                             <li><Link href="#"><i className="fab fa-youtube"></i></Link></li> */}
                         </ul>

@@ -98,10 +98,11 @@ export default function Banner() {
                             style={{backgroundImage: 'url(assets/img/pattern/main-slider-v2-pattern.png)'}}></div>
 
                         <div className="main-slider-two__social-links">
-                            <Link href="#"><span className="icon-letter-v"></span></Link>
+                            <Link href="https://www.instagram.com/namkobuilders1" target="blank"><i className="fab fa-instagram"></i></Link>
+                            {/* <Link href="#"><span className="icon-letter-v"></span></Link>
                             <Link href="#"><span className="icon-twitter"></span></Link>
-                            <Link href="#"><span className="icon-dribbble"></span></Link>
-                            <Link href="#"><span className="icon-facebook-1"></span></Link>
+                            <Link href="#"><span className="icon-dribbble"></span></Link> */}
+                            <Link href="https://www.facebook.com/namkooceanviwe2016/" target="blank"><i className="fab fa-facebook-f"></i></Link>
                         </div>
 
                         <div className="container">
@@ -140,17 +141,17 @@ export default function Banner() {
                             style={{
                                 backgroundImage: isMobile 
                                     ? 'url(assets/img/slider/mob-banner.jpg)' 
-                                    : 'url(assets/img/background/banner-main.png)'
+                                    : 'url(assets/img/background/banner-main2.webp)'
                             }}
                         ></div>
                         <div className="main-slider-two__pattern"
                             style={{backgroundImage: 'url(assets/img/pattern/main-slider-v2-pattern.png)'}}></div>
 
                         <div className="main-slider-two__social-links">
-                            <Link href="#"><span className="icon-letter-v"></span></Link>
-                            <Link href="#"><span className="icon-twitter"></span></Link>
-                            <Link href="#"><span className="icon-dribbble"></span></Link>
-                            <Link href="#"><span className="icon-facebook-1"></span></Link>
+                            <Link href="https://www.instagram.com/namkobuilders1" target="blank"><i className="fab fa-instagram"></i></Link>
+                            {/* <Link href="#"><span className="icon-twitter"></span></Link>
+                            <Link href="#"><span className="icon-dribbble"></span></Link> */}
+                            <Link href="https://www.facebook.com/namkooceanviwe2016/" target="blank"><i className="fab fa-facebook-f"></i></Link>
                         </div>
 
                         <div className="container">

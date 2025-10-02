@@ -64,17 +64,14 @@ export default function ContactPage() {
       <div className="contactContainer">
         <div className="contactLayout">
           {/* Social Media Icons */}
-          <div className="socialIcons">
-            <div className="socialIcon facebook">
-              <Facebook size={20} />
-            </div>
-            <div className="socialIcon twitter">
-              <Twitter size={20} />
-            </div>
-            <div className="socialIcon instagram">
-              <Instagram size={20} />
-            </div>
-          </div>
+<div className="socialIcons">
+  <a href="https://www.facebook.com/namkooceanviwe2016/" target="_blank" rel="noopener noreferrer" className="socialIcon facebook">
+    <Facebook size={20} />
+  </a>
+  <a href="https://www.instagram.com/namkobuilders1" target="_blank" rel="noopener noreferrer" className="socialIcon instagram">
+    <Instagram size={20} />
+  </a>
+</div>
 
           {/* Contact Form */}
           <div className="contactForm">

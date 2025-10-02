@@ -29,9 +29,9 @@ export default function Footer1() {
                                             <p>namkobuilders@gmail.com</p>
                                         </div>
                                         <div className="footer-social-link">
-                                            {/* <Link href="#"><i className="fab fa-facebook-f"></i></Link>
-                                            <Link href="#"><i className="fab fa-twitter"></i></Link> */}
-                                            <Link href="https://www.instagram.com/namkobuilders1"><i className="fab fa-instagram"></i></Link>
+                                            <Link href="https://www.facebook.com/namkooceanviwe2016/" target="blank"><i className="fab fa-facebook-f"></i></Link>
+                                            {/* <Link href="#"><i className="fab fa-twitter"></i></Link> */}
+                                            <Link href="https://www.instagram.com/namkobuilders1" target="blank"><i className="fab fa-instagram"></i></Link>
                                             {/* <Link href="#"><i className="fab fa-linkedin-in"></i></Link>
                                             <Link href="#"><i className="fab fa-youtube"></i></Link> */}
                                         </div>

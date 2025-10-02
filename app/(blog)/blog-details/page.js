@@ -484,8 +484,8 @@ export default function Home() {
                                     </div> */}
 
                                     <div className="project-three__single-content">
-                                        <p>Mangalore</p>
-                                        <h2><Link href="#">Ocean View</Link></h2>
+                                        <p>Modern</p>
+                                        <h2><Link href="#">Dining Space</Link></h2>
                                     </div>
                                 </div>
                             </div>
@@ -511,8 +511,8 @@ export default function Home() {
                                     </div> */}
 
                                     <div className="project-three__single-content">
-                                        <p>Mangalore</p>
-                                        <h2><Link href="/gallery">Ocean View</Link></h2>
+                                        <p>Contemporary</p>
+                                        <h2><Link href="/gallery">Dressing Room</Link></h2>
                                     </div>
                                 </div>
                             </div>
@@ -524,7 +524,7 @@ export default function Home() {
                             <div className="project-three__single">
                                 <div className="project-three__single-inner">
                                     <div className="project-three__single-img"
-                                        style={{backgroundImage: 'url(assets/img/gallery/3.webp)'}}>
+                                        style={{backgroundImage: 'url(assets/img/gallery/58.webp)'}}>
                                     </div>
                                     <div className="bg-overlay"></div>
 
@@ -538,8 +538,8 @@ export default function Home() {
                                     </div> */}
 
                                     <div className="project-three__single-content">
-                                        <p>Mangalore</p>
-                                        <h2><Link href="#">Ocean View</Link></h2>
+                                        <p>Aesthetic</p>
+                                        <h2><Link href="#">Bedroom Space</Link></h2>
                                     </div>
                                 </div>
                             </div>

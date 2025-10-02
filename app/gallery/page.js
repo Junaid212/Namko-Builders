@@ -9,62 +9,62 @@ export default function Home() {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const images = [
-  { id: 1, src: 'assets/img/gallery/1.webp', alt: 'Modern Architecture' },
-  { id: 2, src: 'assets/img/gallery/2.webp', alt: 'City Skyline' },
-  { id: 3, src: 'assets/img/gallery/3.webp', alt: 'Interior Design' },
-  { id: 4, src: 'assets/img/gallery/4.webp', alt: 'Luxury Home' },
-  { id: 5, src: 'assets/img/gallery/5.webp', alt: 'Contemporary Living' },
+  { id: 1, src: 'assets/img/gallery/1.webp', alt: 'Office Space' },
+  { id: 2, src: 'assets/img/gallery/2.webp', alt: 'Living Area' },
+  { id: 3, src: 'assets/img/gallery/3.webp', alt: 'Bedroom' },
+  { id: 4, src: 'assets/img/gallery/4.webp', alt: 'Washroom Space' },
+  { id: 5, src: 'assets/img/gallery/5.webp', alt: 'Dining Space' },
   { id: 6, src: 'assets/img/gallery/6.webp', alt: 'Modern Kitchen' },
   { id: 7, src: 'assets/img/gallery/7.webp', alt: 'Bedroom Design' },
-  { id: 8, src: 'assets/img/gallery/8.webp', alt: 'Office Space' },
-  { id: 9, src: 'assets/img/gallery/9.webp', alt: 'Dining Room' },
-  { id: 10, src: 'assets/img/gallery/10.webp', alt: 'Bathroom Design' },
-  { id: 11, src: 'assets/img/gallery/11.webp', alt: 'Garden View' },
-  { id: 12, src: 'assets/img/gallery/12.webp', alt: 'Balcony Space' },
-  { id: 13, src: 'assets/img/gallery/13.webp', alt: 'Gallery Image 13' },
-  { id: 14, src: 'assets/img/gallery/14.webp', alt: 'Gallery Image 14' },
+  // { id: 8, src: 'assets/img/gallery/8.webp', alt: 'Office Space' },
+  // { id: 9, src: 'assets/img/gallery/9.webp', alt: 'Dining Room' },
+  { id: 10, src: 'assets/img/gallery/10.webp', alt: 'Dining Space' },
+  { id: 11, src: 'assets/img/gallery/11.webp', alt: 'Living Space' },
+  { id: 12, src: 'assets/img/gallery/12.webp', alt: 'Living Space Interior' },
+  { id: 13, src: 'assets/img/gallery/13.webp', alt: 'Wall Art Decor' },
+  { id: 14, src: 'assets/img/gallery/14.webp', alt: 'Modern Living Room' },
   // { id: 15, src: 'assets/img/gallery/15.webp', alt: 'Gallery Image 15' },
-  { id: 16, src: 'assets/img/gallery/16.webp', alt: 'Gallery Image 16' },
-  { id: 17, src: 'assets/img/gallery/17.webp', alt: 'Gallery Image 17' },
-  { id: 18, src: 'assets/img/gallery/18.webp', alt: 'Gallery Image 18' },
-  { id: 19, src: 'assets/img/gallery/19.webp', alt: 'Gallery Image 19' },
-  { id: 20, src: 'assets/img/gallery/20.webp', alt: 'Gallery Image 20' },
+  { id: 16, src: 'assets/img/gallery/16.webp', alt: 'Modern show case' },
+  { id: 17, src: 'assets/img/gallery/17.webp', alt: 'Balcony Sitting Space' },
+  { id: 18, src: 'assets/img/gallery/18.webp', alt: 'Modern Kitchen' },
+  { id: 19, src: 'assets/img/gallery/9.webp', alt: 'Modern Bedroom' },
+  // { id: 20, src: 'assets/img/gallery/20.webp', alt: 'Gallery Image 20' },
   // { id: 21, src: 'assets/img/gallery/21.webp', alt: 'Gallery Image 21' },
-  { id: 22, src: 'assets/img/gallery/22.webp', alt: 'Gallery Image 22' },
+  { id: 22, src: 'assets/img/gallery/22.webp', alt: 'Interior' },
   // { id: 23, src: 'assets/img/gallery/23.webp', alt: 'Gallery Image 23' },
   // { id: 24, src: 'assets/img/gallery/24.webp', alt: 'Gallery Image 24' },
-  { id: 25, src: 'assets/img/gallery/25.webp', alt: 'Gallery Image 25' },
+  { id: 25, src: 'assets/img/gallery/25.webp', alt: 'Modern TV Wll Panel' },
   // { id: 26, src: 'assets/img/gallery/26.webp', alt: 'Gallery Image 26' },
-  { id: 27, src: 'assets/img/gallery/27.webp', alt: 'Gallery Image 27' },
-  { id: 28, src: 'assets/img/gallery/28.webp', alt: 'Gallery Image 28' },
+  { id: 27, src: 'assets/img/gallery/27.webp', alt: 'Balcony view' },
+  { id: 28, src: 'assets/img/gallery/28.webp', alt: 'Dining Space' },
   // { id: 29, src: 'assets/img/gallery/29.webp', alt: 'Gallery Image 29' },
-  { id: 30, src: 'assets/img/gallery/30.webp', alt: 'Gallery Image 30' },
-  { id: 31, src: 'assets/img/gallery/31.webp', alt: 'Gallery Image 31' },
-  { id: 32, src: 'assets/img/gallery/32.webp', alt: 'Gallery Image 32' },
-  { id: 33, src: 'assets/img/gallery/33.webp', alt: 'Gallery Image 33' },
+  { id: 30, src: 'assets/img/gallery/30.webp', alt: 'Balcony Sitting Area' },
+  { id: 31, src: 'assets/img/gallery/31.webp', alt: 'Kitchen space' },
+  { id: 32, src: 'assets/img/gallery/32.webp', alt: 'Bedroom space' },
+  { id: 33, src: 'assets/img/gallery/46.webp', alt: 'Modern living space' },
   // { id: 34, src: 'assets/img/gallery/34.webp', alt: 'Gallery Image 34' },
   // { id: 35, src: 'assets/img/gallery/35.webp', alt: 'Gallery Image 35' },
-  { id: 36, src: 'assets/img/gallery/36.webp', alt: 'Gallery Image 36' },
-  { id: 37, src: 'assets/img/gallery/37.webp', alt: 'Gallery Image 37' },
+  { id: 36, src: 'assets/img/gallery/36.webp', alt: 'Modern Kitchen' },
+  { id: 37, src: 'assets/img/gallery/37.webp', alt: 'Modern Living space' },
   // { id: 38, src: 'assets/img/gallery/38.webp', alt: 'Gallery Image 38' },
-  { id: 39, src: 'assets/img/gallery/39.webp', alt: 'Gallery Image 39' },
-  { id: 40, src: 'assets/img/gallery/40.webp', alt: 'Gallery Image 40' },
+  { id: 39, src: 'assets/img/gallery/39.webp', alt: 'Bedroom' },
+  { id: 40, src: 'assets/img/gallery/40.webp', alt: 'Balcony' },
   // { id: 41, src: 'assets/img/gallery/41.webp', alt: 'Gallery Image 41' },
   // { id: 42, src: 'assets/img/gallery/42.webp', alt: 'Gallery Image 42' },
   // { id: 43, src: 'assets/img/gallery/43.webp', alt: 'Gallery Image 43' },
   // { id: 44, src: 'assets/img/gallery/44.webp', alt: 'Gallery Image 44' },
-  { id: 45, src: 'assets/img/gallery/45.webp', alt: 'Gallery Image 45' },
-  { id: 46, src: 'assets/img/gallery/46.webp', alt: 'Gallery Image 46' },
-  { id: 47, src: 'assets/img/gallery/47.webp', alt: 'Gallery Image 47' },
+  { id: 45, src: 'assets/img/gallery/45.webp', alt: 'Ocean View' },
+  { id: 46, src: 'assets/img/gallery/33.webp', alt: 'Dining Area' },
+  { id: 47, src: 'assets/img/gallery/47.webp', alt: 'Modern Bedroom' },
   // { id: 48, src: 'assets/img/gallery/48.webp', alt: 'Gallery Image 48' },
   // { id: 49, src: 'assets/img/gallery/49.webp', alt: 'Gallery Image 49' },
-  { id: 50, src: 'assets/img/gallery/50.webp', alt: 'Gallery Image 50' },
-  { id: 51, src: 'assets/img/gallery/51.webp', alt: 'Gallery Image 51' },
-  { id: 52, src: 'assets/img/gallery/52.webp', alt: 'Gallery Image 52' },
-  { id: 53, src: 'assets/img/gallery/53.webp', alt: 'Gallery Image 53' },
-  { id: 54, src: 'assets/img/gallery/54.webp', alt: 'Gallery Image 54' },
+  { id: 50, src: 'assets/img/gallery/50.webp', alt: 'Dresing Room' },
+  { id: 51, src: 'assets/img/gallery/51.webp', alt: 'Balcony Space' },
+  { id: 52, src: 'assets/img/gallery/52.webp', alt: 'Interior' },
+  // { id: 53, src: 'assets/img/gallery/53.webp', alt: 'Gallery Image 53' },
+  { id: 54, src: 'assets/img/gallery/54.webp', alt: 'Interior Design' },
   // { id: 55, src: 'assets/img/gallery/55.webp', alt: 'Gallery Image 55' },
-  { id: 56, src: 'assets/img/gallery/56.webp', alt: 'Gallery Image 56' },
+  { id: 56, src: 'assets/img/gallery/56.webp', alt: 'Modern Bedroom' },
 ];
 
   const openModal = (imageSrc) => {
@@ -357,8 +357,8 @@ export default function Home() {
 
 .close-button {
   position: absolute;
-  top: -3rem;
-  right: 0;
+  top: 1rem;
+  right: -5rem;
   color: white;
   background: none;
   border: none;
@@ -371,6 +371,8 @@ export default function Home() {
 }
 
 .close-icon {
+// background-color: red;
+color: #d1d5db;
   height: 2rem;
   width: 2rem;
 }
