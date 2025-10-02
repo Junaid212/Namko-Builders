@@ -19,6 +19,7 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
             })
         }
     }
+    
     return (
         <>           
             {/*Mobile Menu */}
@@ -26,11 +27,12 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
                 <nav className="menu-box">
                     <div className="close-btn" onClick={handleMobileMenu}><i className="fas fa-times"></i></div>
                     <div className="nav-logo">
-                        <Link href="/"><img src="assets/img/resource/namko-logo.png" alt="Logo" /></Link>
+                        <Link href="/" onClick={handleMobileMenu}><img src="assets/img/resource/namko-logo.png" alt="Logo" /></Link>
                     </div>
                     <div className="menu-outer">
                         <ul className="navigation clearfix">
-                            <li className="active menu-item-has-children"> <Link href="/" onClick={handleMobileMenu}>Home</Link>
+                            <li className="active menu-item-has-children"> 
+                                <Link href="/" onClick={handleMobileMenu}>Home</Link>
                                 <ul className="sub-menu" style={{ display: `${isActive.key == 1 ? "block" : "none"}` }}>
                                     {/* <li><Link href="/" onClick={handleMobileMenu}>Home One</Link></li>
                                     <li><Link href="/index-2" onClick={handleMobileMenu}>Home Two</Link></li>
@@ -38,8 +40,11 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
                                 </ul>
                                 {/* <div className={isActive.key == 1 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(1)}><span className="fa fa-angle-right" /></div> */}
                             </li>
-                            <li><Link href="/about">About</Link></li>
-                            <li className="menu-item-has-children"><Link href="/service" onClick={handleMobileMenu}>Services</Link>
+                            <li>
+                                <Link href="/about" onClick={handleMobileMenu}>About</Link>
+                            </li>
+                            <li className="menu-item-has-children">
+                                <Link href="/service" onClick={handleMobileMenu}>Services</Link>
                                 {/* <ul style={{ display: `${isActive.key == 2 ? "block" : "none"}` }}>
                                     <li><Link href="/service" onClick={handleMobileMenu}>Services</Link></li>
                                     <li><Link href="/architecture" onClick={handleMobileMenu}>Architecture</Link></li>
@@ -81,7 +86,8 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
                                 </ul>
                                 <div className={isActive.key == 4 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(4)}><span className="fa fa-angle-right" /></div>
                             </li> */}
-                            <li className="menu-item-has-children"><Link href="/blog-details" onClick={handleMobileMenu}>Projects</Link>
+                            <li className="menu-item-has-children">
+                                <Link href="/blog-details" onClick={handleMobileMenu}>Projects</Link>
                             
                                 {/* <ul style={{ display: `${isActive.key == 5 ? "block" : "none"}` }}>
                                     <li><Link href="/blog" onClick={handleMobileMenu}>Blog</Link></li>
@@ -92,32 +98,35 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
                                 </ul> */}
                                 {/* <div className={isActive.key == 5 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(5)}><span className="fa fa-angle-right" /></div> */}
                             </li>
-                            <li className="menu-item-has-children"><Link href="/gallery" onClick={handleMobileMenu}>Gallery</Link></li>
-                            <li><Link href="/contact" onClick={handleMobileMenu}>Contact</Link></li>
+                            <li className="menu-item-has-children">
+                                <Link href="/gallery" onClick={handleMobileMenu}>Gallery</Link>
+                            </li>
                             <li>
-                    <a 
-                        href="/Ocean-View- Brochure.pdf" 
-                        className="download-btn theme-btn"
-                        download
-                    >
-                        <span>Download Brochure</span>
-                    </a>
-                </li>
+                                <Link href="/contact" onClick={handleMobileMenu}>Contact</Link>
+                            </li>
+                            <li>
+                                <a 
+                                    href="/Ocean-View- Brochure.pdf" 
+                                    className="download-btn theme-btn"
+                                    download
+                                    onClick={handleMobileMenu}
+                                >
+                                    <span>Download Brochure</span>
+                                </a>
+                            </li>
                         </ul>
                         {/*Here Menu Will Come Automatically Via Javascript / Same Menu as in Header */}
                     </div>
                     <div className="contact-info">
                         <div className="icon-box"><span className="icon-call"></span>
                         </div>
-                        <p><Link href="tel:+91 81979 82888
-">+91 81979 82888
-</Link></p>
+                        <p><Link href="tel:+91 81979 82888" onClick={handleMobileMenu}>+91 81979 82888</Link></p>
                     </div>
                     <div className="social-links">
                         <ul className="clearfix list-wrap">
                             {/* <li><Link href="#"><i className="fab fa-facebook-f"></i></Link></li>
                             <li><Link href="#"><i className="fab fa-twitter"></i></Link></li> */}
-                            <li><Link href="https://www.instagram.com/namkobuilders1"><i className="fab fa-instagram"></i></Link></li>
+                            <li><Link href="https://www.instagram.com/namkobuilders1" onClick={handleMobileMenu}><i className="fab fa-instagram"></i></Link></li>
                             {/* <li><Link href="#"><i className="fab fa-linkedin-in"></i></Link></li>
                             <li><Link href="#"><i className="fab fa-youtube"></i></Link></li> */}
                         </ul>
