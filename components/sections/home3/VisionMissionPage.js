@@ -61,8 +61,7 @@ function VisionMissionPage() {
                   <h3 className="section-title">Vision</h3>
                 </div>
                 <p className="section-text">
-                  To be East Africa's leading fresh produce supplier, fostering 
-                  sustainable farming communities and healthy societies.
+                  To be recognized as a trusted builder, known for innovation, excellence, and customer satisfaction in every project.
                 </p>
               </div>
 
@@ -75,8 +74,7 @@ function VisionMissionPage() {
                   <h3 className="section-title">Mission</h3>
                 </div>
                 <p className="section-text">
-                  To source, deliver, and inspire access to the freshest 
-                  produce with integrity, innovation and heart.
+                  To create homes that blend quality, comfort, and modern living, while delivering value to every homeowner.
                 </p>
               </div>
             </div>

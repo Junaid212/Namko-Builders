@@ -140,7 +140,7 @@ export default function Banner() {
                             className="image-layer" 
                             style={{
                                 backgroundImage: isMobile 
-                                    ? 'url(assets/img/slider/mob-banner.jpg)' 
+                                    ? 'url(assets/img/background/mimg.png)' 
                                     : 'url(assets/img/background/banner-main2.webp)'
                             }}
                         ></div>
